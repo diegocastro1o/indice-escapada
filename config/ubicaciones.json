@@ -1,0 +1,84 @@
+{
+  "origen": {
+    "id": "montevideo",
+    "nombre": "Montevideo",
+    "consulta_nominatim": "Montevideo, Montevideo, Uruguay"
+  },
+  "destinos": [
+    {
+      "id": "colonia_del_sacramento",
+      "nombre": "Colonia del Sacramento",
+      "consulta_nominatim": "Colonia del Sacramento, Colonia, Uruguay"
+    },
+    {
+      "id": "carmelo",
+      "nombre": "Carmelo",
+      "consulta_nominatim": "Carmelo, Colonia, Uruguay"
+    },
+    {
+      "id": "piriapolis",
+      "nombre": "Piriápolis",
+      "consulta_nominatim": "Piriápolis, Maldonado, Uruguay"
+    },
+    {
+      "id": "punta_del_este",
+      "nombre": "Punta del Este",
+      "consulta_nominatim": "Punta del Este, Maldonado, Uruguay"
+    },
+    {
+      "id": "jose_ignacio",
+      "nombre": "José Ignacio",
+      "consulta_nominatim": "José Ignacio, Maldonado, Uruguay"
+    },
+    {
+      "id": "la_paloma",
+      "nombre": "La Paloma",
+      "consulta_nominatim": "La Paloma, Rocha, Uruguay"
+    },
+    {
+      "id": "cabo_polonio",
+      "nombre": "Cabo Polonio",
+      "consulta_nominatim": "Cabo Polonio, Rocha, Uruguay"
+    },
+    {
+      "id": "punta_del_diablo",
+      "nombre": "Punta del Diablo",
+      "consulta_nominatim": "Punta del Diablo, Rocha, Uruguay"
+    },
+    {
+      "id": "aguas_dulces",
+      "nombre": "Aguas Dulces",
+      "consulta_nominatim": "Aguas Dulces, Rocha, Uruguay"
+    },
+    {
+      "id": "minas",
+      "nombre": "Minas",
+      "consulta_nominatim": "Minas, Lavalleja, Uruguay"
+    },
+    {
+      "id": "villa_serrana",
+      "nombre": "Villa Serrana",
+      "consulta_nominatim": "Villa Serrana, Lavalleja, Uruguay"
+    },
+    {
+      "id": "termas_del_dayman",
+      "nombre": "Termas del Daymán",
+      "consulta_nominatim": "Termas del Daymán, Salto, Uruguay"
+    },
+    {
+      "id": "salto",
+      "nombre": "Salto",
+      "consulta_nominatim": "Salto, Salto, Uruguay"
+    },
+    {
+      "id": "mercedes",
+      "nombre": "Mercedes",
+      "consulta_nominatim": "Mercedes, Soriano, Uruguay"
+    },
+    {
+      "id": "tacuarembo",
+      "nombre": "Tacuarembó",
+      "consulta_nominatim": "Tacuarembó, Tacuarembó, Uruguay"
+    }
+  ]
+}

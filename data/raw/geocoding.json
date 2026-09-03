@@ -1,0 +1,146 @@
+{
+  "montevideo": {
+    "nombre": "Montevideo",
+    "consulta_nominatim": "Montevideo, Montevideo, Uruguay",
+    "latitud": -34.9058916,
+    "longitud": -56.1913095,
+    "display_name": "Montevideo, Uruguay",
+    "osm_type": "relation",
+    "osm_id": 2929054
+  },
+  "colonia_del_sacramento": {
+    "nombre": "Colonia del Sacramento",
+    "consulta_nominatim": "Colonia del Sacramento, Colonia, Uruguay",
+    "latitud": -34.4698592,
+    "longitud": -57.8433679,
+    "display_name": "Colonia del Sacramento, Colonia, 70000, Uruguay",
+    "osm_type": "relation",
+    "osm_id": 2862754
+  },
+  "carmelo": {
+    "nombre": "Carmelo",
+    "consulta_nominatim": "Carmelo, Colonia, Uruguay",
+    "latitud": -33.9967827,
+    "longitud": -58.2836485,
+    "display_name": "Carmelo, Colonia, 70100, Uruguay",
+    "osm_type": "relation",
+    "osm_id": 2757912
+  },
+  "piriapolis": {
+    "nombre": "Piriápolis",
+    "consulta_nominatim": "Piriápolis, Maldonado, Uruguay",
+    "latitud": -34.8689037,
+    "longitud": -55.2724472,
+    "display_name": "Piriápolis, Maldonado, 20200, Uruguay",
+    "osm_type": "relation",
+    "osm_id": 2451543
+  },
+  "punta_del_este": {
+    "nombre": "Punta del Este",
+    "consulta_nominatim": "Punta del Este, Maldonado, Uruguay",
+    "latitud": -34.9632342,
+    "longitud": -54.9439981,
+    "display_name": "Punta Del Este, Maldonado, 20100, Uruguay",
+    "osm_type": "relation",
+    "osm_id": 2470435
+  },
+  "jose_ignacio": {
+    "nombre": "José Ignacio",
+    "consulta_nominatim": "José Ignacio, Maldonado, Uruguay",
+    "latitud": -34.8448208,
+    "longitud": -54.6376934,
+    "display_name": "José Ignacio, Maldonado, 20402, Uruguay",
+    "osm_type": "relation",
+    "osm_id": 2453191
+  },
+  "la_paloma": {
+    "nombre": "La Paloma",
+    "consulta_nominatim": "La Paloma, Rocha, Uruguay",
+    "latitud": -34.6631811,
+    "longitud": -54.155092,
+    "display_name": "La Paloma, Rocha, 27001, Uruguay",
+    "osm_type": "relation",
+    "osm_id": 2603661
+  },
+  "cabo_polonio": {
+    "nombre": "Cabo Polonio",
+    "consulta_nominatim": "Cabo Polonio, Rocha, Uruguay",
+    "latitud": -34.4028524,
+    "longitud": -53.7825007,
+    "display_name": "Cabo Polonio, Rocha, 27200, Uruguay",
+    "osm_type": "relation",
+    "osm_id": 2608305
+  },
+  "punta_del_diablo": {
+    "nombre": "Punta del Diablo",
+    "consulta_nominatim": "Punta del Diablo, Rocha, Uruguay",
+    "latitud": -34.0449102,
+    "longitud": -53.5398091,
+    "display_name": "Punta del Diablo, Rocha, 27204, Uruguay",
+    "osm_type": "relation",
+    "osm_id": 2609931
+  },
+  "aguas_dulces": {
+    "nombre": "Aguas Dulces",
+    "consulta_nominatim": "Aguas Dulces, Rocha, Uruguay",
+    "latitud": -34.2766358,
+    "longitud": -53.7814956,
+    "display_name": "Aguas Dulces, Rocha, 27002, Uruguay",
+    "osm_type": "relation",
+    "osm_id": 2603401
+  },
+  "minas": {
+    "nombre": "Minas",
+    "consulta_nominatim": "Minas, Lavalleja, Uruguay",
+    "latitud": -34.3773987,
+    "longitud": -55.2382144,
+    "display_name": "Minas, Lavalleja, 30000, Uruguay",
+    "osm_type": "relation",
+    "osm_id": 2559279
+  },
+  "villa_serrana": {
+    "nombre": "Villa Serrana",
+    "consulta_nominatim": "Villa Serrana, Lavalleja, Uruguay",
+    "latitud": -34.3223672,
+    "longitud": -54.9893614,
+    "display_name": "Villa Serrana, Lavalleja, 30000, Uruguay",
+    "osm_type": "relation",
+    "osm_id": 2562628
+  },
+  "termas_del_dayman": {
+    "nombre": "Termas del Daymán",
+    "consulta_nominatim": "Termas del Daymán, Salto, Uruguay",
+    "latitud": -31.4525017,
+    "longitud": -57.9083609,
+    "display_name": "Termas del Daymán, Salto, 50000, Uruguay",
+    "osm_type": "relation",
+    "osm_id": 3423903
+  },
+  "salto": {
+    "nombre": "Salto",
+    "consulta_nominatim": "Salto, Salto, Uruguay",
+    "latitud": -31.38889,
+    "longitud": -57.9608876,
+    "display_name": "Salto, 50000, Uruguay",
+    "osm_type": "relation",
+    "osm_id": 3414038
+  },
+  "mercedes": {
+    "nombre": "Mercedes",
+    "consulta_nominatim": "Mercedes, Soriano, Uruguay",
+    "latitud": -33.2484204,
+    "longitud": -58.0298671,
+    "display_name": "Mercedes, Soriano, 75000, Uruguay",
+    "osm_type": "relation",
+    "osm_id": 3291658
+  },
+  "tacuarembo": {
+    "nombre": "Tacuarembó",
+    "consulta_nominatim": "Tacuarembó, Tacuarembó, Uruguay",
+    "latitud": -31.7110183,
+    "longitud": -55.9788762,
+    "display_name": "Tacuarembó, 45000, Uruguay",
+    "osm_type": "relation",
+    "osm_id": 3569171
+  }
+}

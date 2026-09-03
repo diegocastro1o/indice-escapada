@@ -1,0 +1,14 @@
+# env vars
+.env
+.env.local
+
+# IDEs & OS files/dirs
+.idea/
+.DS_Store
+.DS_Store/
+
+# venv & python files
+.env
+__pycache__/
+*.py[cod]
+
