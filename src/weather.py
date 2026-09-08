@@ -1,3 +1,4 @@
+import argparse
 import json
 import sys
 import time
@@ -14,8 +15,14 @@ DAILY_VARIABLES = [
     "wind_speed_10m_max",
 ]
 MAX_RETRIES = 2
-RETRY_DELAY_SECONDS = 2
+RETRY_DELAY_SECONDS = 5
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
+MUESTRA_DESTINOS = [
+    "colonia_del_sacramento",
+    "carmelo",
+    "piriapolis",
+]
+MUESTRA_ANIOS = [2015, 2016, 2017]
 
 
 def cargar_ubicacion(destino_id: str, geocoding_path: Path) -> dict:
@@ -65,10 +72,24 @@ def descargar_clima(ubicacion: dict, anio: int) -> dict:
             respuesta = requests.get(OPEN_METEO_ARCHIVE_URL, params=params, timeout=30)
             respuesta.raise_for_status()
             return respuesta.json()
+        except requests.HTTPError as error:
+            if intento == MAX_RETRIES:
+                raise
+            retry_after = (
+                error.response.headers.get("Retry-After")
+                if error.response is not None
+                else None
+            )
+            espera = float(retry_after) if retry_after else RETRY_DELAY_SECONDS * (intento + 1)
+            estado = error.response.status_code if error.response is not None else "HTTP"
+            print(f"[reintento] Open-Meteo respondió {estado}; esperando {espera:g}s.")
+            time.sleep(espera)
         except requests.RequestException:
             if intento == MAX_RETRIES:
                 raise
-            time.sleep(RETRY_DELAY_SECONDS)
+            espera = RETRY_DELAY_SECONDS * (intento + 1)
+            print(f"[reintento] Error de red; esperando {espera:g}s.")
+            time.sleep(espera)
 
     raise RuntimeError("No se pudo descargar el clima")
 
@@ -95,10 +116,11 @@ def obtener_clima(
     anio: int,
     geocoding_path: Path,
     weather_dir: Path,
+    force: bool = False,
 ) -> dict:
     cache_path = ruta_cache(destino_id, anio, weather_dir)
     cache = cargar_cache(cache_path)
-    if cache is not None:
+    if cache is not None and not force:
         cantidad_dias = validar_datos_diarios(cache, anio)
         print(f"[cache] {destino_id} {anio}: {cantidad_dias} días")
         return cache
@@ -112,13 +134,54 @@ def obtener_clima(
     return datos
 
 
+def recolectar_sincrono(
+    destinos: list[str],
+    anios: list[int],
+    geocoding_path: Path,
+    weather_dir: Path,
+    force: bool = False,
+) -> None:
+    tareas = [(destino_id, anio) for destino_id in destinos for anio in anios]
+    inicio = time.perf_counter()
+    registros = 0
+
+    print(f"[inicio] Recolectando {len(tareas)} tareas en modo síncrono.")
+    for posicion, (destino_id, anio) in enumerate(tareas, start=1):
+        print(f"[progreso] {posicion}/{len(tareas)}")
+        datos = obtener_clima(
+            destino_id=destino_id,
+            anio=anio,
+            geocoding_path=geocoding_path,
+            weather_dir=weather_dir,
+            force=force,
+        )
+        registros += len(datos["daily"]["time"])
+
+    duracion = time.perf_counter() - inicio
+    print(
+        f"[finalizado] {len(tareas)} tareas, {registros} registros diarios, "
+        f"{duracion:.2f} segundos."
+    )
+
+
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(
+        description="Recolecta una muestra síncrona de clima para el hito 2."
+    )
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Vuelve a descargar incluso los archivos que ya están en caché.",
+    )
+    argumentos = parser.parse_args()
+
     try:
-        obtener_clima(
-            destino_id="colonia_del_sacramento",
-            anio=2015,
+        recolectar_sincrono(
+            destinos=MUESTRA_DESTINOS,
+            anios=MUESTRA_ANIOS,
             geocoding_path=PROJECT_ROOT / "data/raw/geocoding.json",
             weather_dir=PROJECT_ROOT / "data/raw/weather",
+            force=argumentos.force,
         )
     except (OSError, ValueError, requests.RequestException) as error:
         print(f"[error] No se pudo obtener el clima: {error}", file=sys.stderr)
