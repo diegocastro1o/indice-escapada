@@ -1,47 +1,60 @@
-El objetivo de este primer proyecto busca responder siguiente pregunta:
+# Bitácora del proyecto
 
-¿Cuál es el mejor fin de semana largo del año para escaparse en Uruguay, y
-adónde?
+## Objetivo
 
-El proyecto se dividira en distintos hitos. Cada uno de estos representara distintas etapas las cuales se 
-documentaran los procesos del trabajo.
-Los siguientes incluiran:
--Desiciones
--Inconvenientes
--Procedimientos
--Aprendizajes
+Este primer proyecto busca responder la siguiente pregunta:
 
-El fundamento y lo primero en lo que se basa nuestro trabajo es en la eleccion de la API. Luego de una busqueda exhaustiva,
-necesiabamos una API que cumpla nustras necesidades. En ese momento dimos con FOURSQUARE API. 
+> ¿Cuál es el mejor fin de semana largo del año para escaparse en Uruguay y adónde?
 
-FOURSQUARE permitia solicitar las ubicaciones de interes cerca de un lugar. Detectava y devolvia ubicaciones de restaurantes, boliches, zonas de entretenimiento,
-atracciones, etc. Esta posibilidad seria crucial y de gran ayuda para responder a la pregunta.
-Finalmente, terminamos por descartar la API debido a que, para usarla, debiamos ingresar un metodo de pago como parte del registro.
+El proyecto se dividirá en distintos hitos. Cada uno representará una etapa del trabajo, en la que se documentarán:
 
-HITO 1:
-Comenzamos creando un repositorio en GIT para poder trabajar de forma sincronica. Utilizamos pycharm como motor de nuestro trabajo.
-Creamos la carpeta indice-escapada la cual seria el paradero de nuestros archivos.
-Creamos la carpeta solicitada en los requisitos llamada 'config', dentro de esta, esta el archivo 'ubicaciones.json'
-    Elegimos el lugar de partida:
+- Decisiones
+- Inconvenientes
+- Procedimientos
+- Aprendizajes
 
-                            - MONTEVIDEO
-    Elegimos los destinos: 
+---
 
-                            - COLONIA DEL SACRAMENTO
-                            - CARMELO
-                            - PIRIAPOLIS
-                            - PUNTA DEL ESTE
-                            - JOSE IGNACIO
-                            - LA PALOMA
-                            - CABO POLONIO
-                            - PUNTA DEL DIABLO
-                            - AGUAS DULCES
-                            - MINAS
-                            - VILLA SERRANA 
-                            - TERMAS DEL DAYMAN
-                            - SALTO
-                            - MERCEDES
-                            - TACUAREMBO
+## Elección de la API
+
+El primer aspecto fundamental de nuestro trabajo fue la elección de la API. Luego de una búsqueda exhaustiva, necesitábamos una que cumpliera con nuestras necesidades. En ese momento encontramos la API de **Foursquare**.
+
+Foursquare permitía solicitar ubicaciones de interés cerca de un lugar. Detectaba y devolvía ubicaciones de restaurantes, boliches, zonas de entretenimiento, atracciones, entre otros.
+
+Esta posibilidad sería crucial y de gran ayuda para responder la pregunta del proyecto. Finalmente, decidimos descartar esta API porque, para utilizarla, debíamos ingresar un método de pago como parte del registro.
+
+---
+
+# Hito 1 — Inicio del proyecto
+
+Comenzamos creando un repositorio en **Git** para poder trabajar de forma sincronizada. Utilizamos **PyCharm** como entorno de desarrollo.
+
+Creamos la carpeta `indice-escapada`, que sería el lugar principal de nuestros archivos.
+
+También creamos la carpeta solicitada en los requisitos, llamada `config`. Dentro de ella se encuentra el archivo `ubicaciones.json`.
+
+## Lugar de partida
+
+- Montevideo
+
+## Destinos elegidos
+
+- Colonia del Sacramento
+- Carmelo
+- Piriápolis
+- Punta del Este
+- José Ignacio
+- La Paloma
+- Cabo Polonio
+- Punta del Diablo
+- Aguas Dulces
+- Minas
+- Villa Serrana
+- Termas del Daymán
+- Salto
+- Mercedes
+- Tacuarembó
+
     
 Agregamos al achivo ubicaciones.json el lugar de partida y los destinos, cada uno con una id respectiva y su forma de llamarlos en la API.
 Creamos la carpeta SRC, dentro tiene dos archivos: 
