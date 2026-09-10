@@ -75,8 +75,12 @@ Este script está diseñado para conectarse a la API de **Open-Meteo** y descarg
 * Precipitación.
 * Velocidad del viento.
 
+
+
+> **Output de llamada a Open-Meteo -SECUENCIAL- (3 destinos x 3 años) = 9.22 seg.**
+
 > **Nota de desarrollo (Actualización 10/09):**
 > La recolección de datos en Open-Meteo **sí se paraleliza** (modo asíncrono) para agilizar la descarga. Sin embargo, las consultas a Nominatim (`geocoding.py`) **no se paralelizan**, ya que los términos de servicio exigen mantener un límite estricto de una consulta por segundo.
 
-
+>**Output de llamada a Open-Meteo -ASÍNCRONA- (3 destinos x 3 años) = 1.30 seg.** 
 
