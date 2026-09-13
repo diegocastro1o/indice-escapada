@@ -1,0 +1,3754 @@
+{
+  "anio_objetivo": 2026,
+  "anios_historicos": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "pesos_finales": {
+    "clima": 0.8,
+    "acceso": 0.15,
+    "duracion": 0.05
+  },
+  "pesos_clima": {
+    "apparent_temperature_max": 0.3,
+    "apparent_temperature_min": 0.2,
+    "precipitation_sum": 0.35,
+    "precipitation_hours": 0.15
+  },
+  "cantidad_fines_largos": 8,
+  "cantidad_combinaciones": 120,
+  "conclusiones": [
+    "La mejor combinación es Piriápolis del 2026-04-02 al 2026-04-05, con 87.35 puntos.",
+    "Termas del Daymán baja 13 puestos para el finde del 2026-05-16 cuando se considera el tiempo de viaje: pasa del puesto 2 por clima al 15 final."
+  ],
+  "ranking": [
+    {
+      "finde_id": "2026-04-02",
+      "inicio": "2026-04-02",
+      "fin": "2026-04-05",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Semana de Turismo"
+      ],
+      "destino_id": "piriapolis",
+      "destino": "Piriápolis",
+      "puntaje_final": 87.35,
+      "puntaje_clima": 86.38,
+      "puntaje_acceso": 88.31,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 23.45,
+        "apparent_temperature_min": 15.04,
+        "precipitation_sum": 2.56,
+        "precipitation_hours": 3.73
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 74.4,
+        "precipitation_hours": 68.96
+      },
+      "distancia_km": 99.02,
+      "duracion_viaje_minutos": 109.08,
+      "posicion_general": 1,
+      "posicion_en_finde": 1
+    },
+    {
+      "finde_id": "2026-05-01",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-03",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Trabajadores"
+      ],
+      "destino_id": "piriapolis",
+      "destino": "Piriápolis",
+      "puntaje_final": 87.03,
+      "puntaje_clima": 87.55,
+      "puntaje_acceso": 88.31,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 17.81,
+        "apparent_temperature_min": 11.07,
+        "precipitation_sum": 1.18,
+        "precipitation_hours": 1.9
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 85.38,
+        "apparent_temperature_min": 92.25,
+        "precipitation_sum": 88.17,
+        "precipitation_hours": 84.17
+      },
+      "distancia_km": 99.02,
+      "duracion_viaje_minutos": 109.08,
+      "posicion_general": 2,
+      "posicion_en_finde": 1
+    },
+    {
+      "finde_id": "2026-04-02",
+      "inicio": "2026-04-02",
+      "fin": "2026-04-05",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Semana de Turismo"
+      ],
+      "destino_id": "minas",
+      "destino": "Minas",
+      "puntaje_final": 86.93,
+      "puntaje_clima": 86.29,
+      "puntaje_acceso": 85.99,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 22.86,
+        "apparent_temperature_min": 13.22,
+        "precipitation_sum": 2.62,
+        "precipitation_hours": 3.62
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 73.78,
+        "precipitation_hours": 69.79
+      },
+      "distancia_km": 119.99,
+      "duracion_viaje_minutos": 118.84,
+      "posicion_general": 3,
+      "posicion_en_finde": 2
+    },
+    {
+      "finde_id": "2026-04-02",
+      "inicio": "2026-04-02",
+      "fin": "2026-04-05",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Semana de Turismo"
+      ],
+      "destino_id": "punta_del_este",
+      "destino": "Punta del Este",
+      "puntaje_final": 86.62,
+      "puntaje_clima": 86.65,
+      "puntaje_acceso": 81.99,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 23.13,
+        "apparent_temperature_min": 15.32,
+        "precipitation_sum": 2.34,
+        "precipitation_hours": 4.12
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 76.6,
+        "precipitation_hours": 65.62
+      },
+      "distancia_km": 132.48,
+      "duracion_viaje_minutos": 135.64,
+      "posicion_general": 4,
+      "posicion_en_finde": 3
+    },
+    {
+      "finde_id": "2026-05-01",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-03",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Trabajadores"
+      ],
+      "destino_id": "jose_ignacio",
+      "destino": "José Ignacio",
+      "puntaje_final": 86.14,
+      "puntaje_clima": 88.6,
+      "puntaje_acceso": 76.78,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 17.96,
+        "apparent_temperature_min": 11.36,
+        "precipitation_sum": 1.08,
+        "precipitation_hours": 1.97
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 86.38,
+        "apparent_temperature_min": 94.67,
+        "precipitation_sum": 89.17,
+        "precipitation_hours": 83.61
+      },
+      "distancia_km": 158.1,
+      "duracion_viaje_minutos": 157.53,
+      "posicion_general": 5,
+      "posicion_en_finde": 2
+    },
+    {
+      "finde_id": "2026-02-14",
+      "inicio": "2026-02-14",
+      "fin": "2026-02-17",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Carnaval"
+      ],
+      "destino_id": "villa_serrana",
+      "destino": "Villa Serrana",
+      "puntaje_final": 86.11,
+      "puntaje_clima": 86.47,
+      "puntaje_acceso": 79.6,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 27.85,
+        "apparent_temperature_min": 16.44,
+        "precipitation_sum": 2.64,
+        "precipitation_hours": 3.45
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 73.65,
+        "precipitation_hours": 71.25
+      },
+      "distancia_km": 150.6,
+      "duracion_viaje_minutos": 145.7,
+      "posicion_general": 6,
+      "posicion_en_finde": 1
+    },
+    {
+      "finde_id": "2026-02-14",
+      "inicio": "2026-02-14",
+      "fin": "2026-02-17",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Carnaval"
+      ],
+      "destino_id": "jose_ignacio",
+      "destino": "José Ignacio",
+      "puntaje_final": 85.94,
+      "puntaje_clima": 86.78,
+      "puntaje_acceso": 76.78,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 27.81,
+        "apparent_temperature_min": 19.09,
+        "precipitation_sum": 2.28,
+        "precipitation_hours": 4.2
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 77.22,
+        "precipitation_hours": 65.0
+      },
+      "distancia_km": 158.1,
+      "duracion_viaje_minutos": 157.53,
+      "posicion_general": 7,
+      "posicion_en_finde": 2
+    },
+    {
+      "finde_id": "2026-05-01",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-03",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Trabajadores"
+      ],
+      "destino_id": "punta_del_este",
+      "destino": "Punta del Este",
+      "puntaje_final": 85.89,
+      "puntaje_clima": 87.3,
+      "puntaje_acceso": 81.99,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 17.73,
+        "apparent_temperature_min": 11.28,
+        "precipitation_sum": 1.25,
+        "precipitation_hours": 2.07
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 84.89,
+        "apparent_temperature_min": 93.97,
+        "precipitation_sum": 87.5,
+        "precipitation_hours": 82.78
+      },
+      "distancia_km": 132.48,
+      "duracion_viaje_minutos": 135.64,
+      "posicion_general": 8,
+      "posicion_en_finde": 3
+    },
+    {
+      "finde_id": "2026-04-02",
+      "inicio": "2026-04-02",
+      "fin": "2026-04-05",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Semana de Turismo"
+      ],
+      "destino_id": "villa_serrana",
+      "destino": "Villa Serrana",
+      "puntaje_final": 85.53,
+      "puntaje_clima": 85.74,
+      "puntaje_acceso": 79.6,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 22.49,
+        "apparent_temperature_min": 12.76,
+        "precipitation_sum": 2.71,
+        "precipitation_hours": 3.83
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 72.92,
+        "precipitation_hours": 68.12
+      },
+      "distancia_km": 150.6,
+      "duracion_viaje_minutos": 145.7,
+      "posicion_general": 9,
+      "posicion_en_finde": 4
+    },
+    {
+      "finde_id": "2026-04-02",
+      "inicio": "2026-04-02",
+      "fin": "2026-04-05",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Semana de Turismo"
+      ],
+      "destino_id": "jose_ignacio",
+      "destino": "José Ignacio",
+      "puntaje_final": 85.35,
+      "puntaje_clima": 86.04,
+      "puntaje_acceso": 76.78,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 23.09,
+        "apparent_temperature_min": 15.6,
+        "precipitation_sum": 2.49,
+        "precipitation_hours": 4.2
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 75.12,
+        "precipitation_hours": 65.0
+      },
+      "distancia_km": 158.1,
+      "duracion_viaje_minutos": 157.53,
+      "posicion_general": 10,
+      "posicion_en_finde": 5
+    },
+    {
+      "finde_id": "2026-02-14",
+      "inicio": "2026-02-14",
+      "fin": "2026-02-17",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Carnaval"
+      ],
+      "destino_id": "minas",
+      "destino": "Minas",
+      "puntaje_final": 85.31,
+      "puntaje_clima": 84.27,
+      "puntaje_acceso": 85.99,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 28.33,
+        "apparent_temperature_min": 16.91,
+        "precipitation_sum": 2.94,
+        "precipitation_hours": 3.7
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 97.25,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 70.62,
+        "precipitation_hours": 69.17
+      },
+      "distancia_km": 119.99,
+      "duracion_viaje_minutos": 118.84,
+      "posicion_general": 11,
+      "posicion_en_finde": 3
+    },
+    {
+      "finde_id": "2026-02-14",
+      "inicio": "2026-02-14",
+      "fin": "2026-02-17",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Carnaval"
+      ],
+      "destino_id": "colonia_del_sacramento",
+      "destino": "Colonia del Sacramento",
+      "puntaje_final": 84.96,
+      "puntaje_clima": 84.97,
+      "puntaje_acceso": 79.9,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 29.55,
+        "apparent_temperature_min": 19.51,
+        "precipitation_sum": 2.19,
+        "precipitation_hours": 2.8
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 87.1,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 78.1,
+        "precipitation_hours": 76.67
+      },
+      "distancia_km": 179.85,
+      "duracion_viaje_minutos": 144.41,
+      "posicion_general": 12,
+      "posicion_en_finde": 4
+    },
+    {
+      "finde_id": "2026-12-25",
+      "inicio": "2026-12-25",
+      "fin": "2026-12-27",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Familia"
+      ],
+      "destino_id": "minas",
+      "destino": "Minas",
+      "puntaje_final": 84.22,
+      "puntaje_clima": 84.47,
+      "puntaje_acceso": 85.99,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 27.8,
+        "apparent_temperature_min": 15.22,
+        "precipitation_sum": 3.22,
+        "precipitation_hours": 3.4
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 67.77,
+        "precipitation_hours": 71.67
+      },
+      "distancia_km": 119.99,
+      "duracion_viaje_minutos": 118.84,
+      "posicion_general": 13,
+      "posicion_en_finde": 1
+    },
+    {
+      "finde_id": "2026-02-14",
+      "inicio": "2026-02-14",
+      "fin": "2026-02-17",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Carnaval"
+      ],
+      "destino_id": "punta_del_este",
+      "destino": "Punta del Este",
+      "puntaje_final": 84.04,
+      "puntaje_clima": 83.43,
+      "puntaje_acceso": 81.99,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 28.07,
+        "apparent_temperature_min": 18.98,
+        "precipitation_sum": 3.17,
+        "precipitation_hours": 4.22
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 99.42,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 68.25,
+        "precipitation_hours": 64.79
+      },
+      "distancia_km": 132.48,
+      "duracion_viaje_minutos": 135.64,
+      "posicion_general": 14,
+      "posicion_en_finde": 5
+    },
+    {
+      "finde_id": "2026-12-25",
+      "inicio": "2026-12-25",
+      "fin": "2026-12-27",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Familia"
+      ],
+      "destino_id": "punta_del_este",
+      "destino": "Punta del Este",
+      "puntaje_final": 84.01,
+      "puntaje_clima": 84.95,
+      "puntaje_acceso": 81.99,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 26.53,
+        "apparent_temperature_min": 17.0,
+        "precipitation_sum": 3.1,
+        "precipitation_hours": 3.37
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 69.03,
+        "precipitation_hours": 71.94
+      },
+      "distancia_km": 132.48,
+      "duracion_viaje_minutos": 135.64,
+      "posicion_general": 15,
+      "posicion_en_finde": 2
+    },
+    {
+      "finde_id": "2026-05-01",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-03",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Trabajadores"
+      ],
+      "destino_id": "aguas_dulces",
+      "destino": "Aguas Dulces",
+      "puntaje_final": 83.85,
+      "puntaje_clima": 89.33,
+      "puntaje_acceso": 57.58,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 18.34,
+        "apparent_temperature_min": 12.13,
+        "precipitation_sum": 1.17,
+        "precipitation_hours": 2.6
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 88.91,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 88.3,
+        "precipitation_hours": 78.33
+      },
+      "distancia_km": 265.07,
+      "duracion_viaje_minutos": 238.17,
+      "posicion_general": 16,
+      "posicion_en_finde": 4
+    },
+    {
+      "finde_id": "2026-12-25",
+      "inicio": "2026-12-25",
+      "fin": "2026-12-27",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Familia"
+      ],
+      "destino_id": "villa_serrana",
+      "destino": "Villa Serrana",
+      "puntaje_final": 83.49,
+      "puntaje_clima": 84.75,
+      "puntaje_acceso": 79.6,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 27.16,
+        "apparent_temperature_min": 14.77,
+        "precipitation_sum": 3.1,
+        "precipitation_hours": 3.53
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 69.03,
+        "precipitation_hours": 70.56
+      },
+      "distancia_km": 150.6,
+      "duracion_viaje_minutos": 145.7,
+      "posicion_general": 17,
+      "posicion_en_finde": 3
+    },
+    {
+      "finde_id": "2026-02-14",
+      "inicio": "2026-02-14",
+      "fin": "2026-02-17",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Carnaval"
+      ],
+      "destino_id": "la_paloma",
+      "destino": "La Paloma",
+      "puntaje_final": 83.48,
+      "puntaje_clima": 85.99,
+      "puntaje_acceso": 64.61,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 27.93,
+        "apparent_temperature_min": 19.52,
+        "precipitation_sum": 2.56,
+        "precipitation_hours": 4.03
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 74.35,
+        "precipitation_hours": 66.46
+      },
+      "distancia_km": 224.68,
+      "duracion_viaje_minutos": 208.65,
+      "posicion_general": 18,
+      "posicion_en_finde": 6
+    },
+    {
+      "finde_id": "2026-02-14",
+      "inicio": "2026-02-14",
+      "fin": "2026-02-17",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Carnaval"
+      ],
+      "destino_id": "piriapolis",
+      "destino": "Piriápolis",
+      "puntaje_final": 83.38,
+      "puntaje_clima": 81.41,
+      "puntaje_acceso": 88.31,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 28.52,
+        "apparent_temperature_min": 18.8,
+        "precipitation_sum": 3.45,
+        "precipitation_hours": 4.17
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 95.63,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 65.55,
+        "precipitation_hours": 65.21
+      },
+      "distancia_km": 99.02,
+      "duracion_viaje_minutos": 109.08,
+      "posicion_general": 19,
+      "posicion_en_finde": 7
+    },
+    {
+      "finde_id": "2026-05-01",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-03",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Trabajadores"
+      ],
+      "destino_id": "cabo_polonio",
+      "destino": "Cabo Polonio",
+      "puntaje_final": 83.33,
+      "puntaje_clima": 89.17,
+      "puntaje_acceso": 54.95,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 18.21,
+        "apparent_temperature_min": 11.98,
+        "precipitation_sum": 1.15,
+        "precipitation_hours": 2.53
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 88.04,
+        "apparent_temperature_min": 99.81,
+        "precipitation_sum": 88.47,
+        "precipitation_hours": 78.89
+      },
+      "distancia_km": 273.98,
+      "duracion_viaje_minutos": 249.22,
+      "posicion_general": 20,
+      "posicion_en_finde": 5
+    },
+    {
+      "finde_id": "2026-12-25",
+      "inicio": "2026-12-25",
+      "fin": "2026-12-27",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Familia"
+      ],
+      "destino_id": "piriapolis",
+      "destino": "Piriápolis",
+      "puntaje_final": 83.23,
+      "puntaje_clima": 82.79,
+      "puntaje_acceso": 88.31,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 27.25,
+        "apparent_temperature_min": 17.07,
+        "precipitation_sum": 3.45,
+        "precipitation_hours": 4.1
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 65.47,
+        "precipitation_hours": 65.83
+      },
+      "distancia_km": 99.02,
+      "duracion_viaje_minutos": 109.08,
+      "posicion_general": 21,
+      "posicion_en_finde": 4
+    },
+    {
+      "finde_id": "2026-05-01",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-03",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Trabajadores"
+      ],
+      "destino_id": "la_paloma",
+      "destino": "La Paloma",
+      "puntaje_final": 83.16,
+      "puntaje_clima": 87.14,
+      "puntaje_acceso": 64.61,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 18.03,
+        "apparent_temperature_min": 11.94,
+        "precipitation_sum": 1.75,
+        "precipitation_hours": 2.13
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 86.84,
+        "apparent_temperature_min": 99.47,
+        "precipitation_sum": 82.47,
+        "precipitation_hours": 82.22
+      },
+      "distancia_km": 224.68,
+      "duracion_viaje_minutos": 208.65,
+      "posicion_general": 22,
+      "posicion_en_finde": 6
+    },
+    {
+      "finde_id": "2026-12-25",
+      "inicio": "2026-12-25",
+      "fin": "2026-12-27",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Familia"
+      ],
+      "destino_id": "aguas_dulces",
+      "destino": "Aguas Dulces",
+      "puntaje_final": 83.08,
+      "puntaje_clima": 88.36,
+      "puntaje_acceso": 57.58,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 25.48,
+        "apparent_temperature_min": 17.49,
+        "precipitation_sum": 2.15,
+        "precipitation_hours": 3.3
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 78.53,
+        "precipitation_hours": 72.5
+      },
+      "distancia_km": 265.07,
+      "duracion_viaje_minutos": 238.17,
+      "posicion_general": 23,
+      "posicion_en_finde": 5
+    },
+    {
+      "finde_id": "2026-12-25",
+      "inicio": "2026-12-25",
+      "fin": "2026-12-27",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Familia"
+      ],
+      "destino_id": "jose_ignacio",
+      "destino": "José Ignacio",
+      "puntaje_final": 82.9,
+      "puntaje_clima": 84.54,
+      "puntaje_acceso": 76.78,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 25.86,
+        "apparent_temperature_min": 16.97,
+        "precipitation_sum": 3.25,
+        "precipitation_hours": 3.27
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 67.5,
+        "precipitation_hours": 72.78
+      },
+      "distancia_km": 158.1,
+      "duracion_viaje_minutos": 157.53,
+      "posicion_general": 24,
+      "posicion_en_finde": 6
+    },
+    {
+      "finde_id": "2026-12-25",
+      "inicio": "2026-12-25",
+      "fin": "2026-12-27",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Familia"
+      ],
+      "destino_id": "punta_del_diablo",
+      "destino": "Punta del Diablo",
+      "puntaje_final": 82.82,
+      "puntaje_clima": 88.94,
+      "puntaje_acceso": 52.76,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 25.59,
+        "apparent_temperature_min": 17.78,
+        "precipitation_sum": 2.08,
+        "precipitation_hours": 3.03
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 79.23,
+        "precipitation_hours": 74.72
+      },
+      "distancia_km": 291.87,
+      "duracion_viaje_minutos": 258.41,
+      "posicion_general": 25,
+      "posicion_en_finde": 7
+    },
+    {
+      "finde_id": "2026-02-14",
+      "inicio": "2026-02-14",
+      "fin": "2026-02-17",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Carnaval"
+      ],
+      "destino_id": "carmelo",
+      "destino": "Carmelo",
+      "puntaje_final": 82.6,
+      "puntaje_clima": 84.85,
+      "puntaje_acceso": 64.8,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 30.52,
+        "apparent_temperature_min": 19.64,
+        "precipitation_sum": 1.83,
+        "precipitation_hours": 1.95
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 79.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 81.67,
+        "precipitation_hours": 83.75
+      },
+      "distancia_km": 239.14,
+      "duracion_viaje_minutos": 207.85,
+      "posicion_general": 26,
+      "posicion_en_finde": 8
+    },
+    {
+      "finde_id": "2026-12-25",
+      "inicio": "2026-12-25",
+      "fin": "2026-12-27",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Familia"
+      ],
+      "destino_id": "cabo_polonio",
+      "destino": "Cabo Polonio",
+      "puntaje_final": 82.57,
+      "puntaje_clima": 88.22,
+      "puntaje_acceso": 54.95,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 25.43,
+        "apparent_temperature_min": 17.41,
+        "precipitation_sum": 2.22,
+        "precipitation_hours": 3.2
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 77.77,
+        "precipitation_hours": 73.33
+      },
+      "distancia_km": 273.98,
+      "duracion_viaje_minutos": 249.22,
+      "posicion_general": 27,
+      "posicion_en_finde": 8
+    },
+    {
+      "finde_id": "2026-12-25",
+      "inicio": "2026-12-25",
+      "fin": "2026-12-27",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Familia"
+      ],
+      "destino_id": "la_paloma",
+      "destino": "La Paloma",
+      "puntaje_final": 82.13,
+      "puntaje_clima": 85.86,
+      "puntaje_acceso": 64.61,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 25.77,
+        "apparent_temperature_min": 17.16,
+        "precipitation_sum": 2.68,
+        "precipitation_hours": 3.8
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 73.17,
+        "precipitation_hours": 68.33
+      },
+      "distancia_km": 224.68,
+      "duracion_viaje_minutos": 208.65,
+      "posicion_general": 28,
+      "posicion_en_finde": 9
+    },
+    {
+      "finde_id": "2026-04-02",
+      "inicio": "2026-04-02",
+      "fin": "2026-04-05",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Semana de Turismo"
+      ],
+      "destino_id": "colonia_del_sacramento",
+      "destino": "Colonia del Sacramento",
+      "puntaje_final": 81.93,
+      "puntaje_clima": 81.18,
+      "puntaje_acceso": 79.9,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 23.64,
+        "apparent_temperature_min": 15.31,
+        "precipitation_sum": 4.3,
+        "precipitation_hours": 3.0
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 56.95,
+        "precipitation_hours": 75.0
+      },
+      "distancia_km": 179.85,
+      "duracion_viaje_minutos": 144.41,
+      "posicion_general": 29,
+      "posicion_en_finde": 6
+    },
+    {
+      "finde_id": "2026-05-01",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-03",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Trabajadores"
+      ],
+      "destino_id": "minas",
+      "destino": "Minas",
+      "puntaje_final": 81.84,
+      "puntaje_clima": 81.49,
+      "puntaje_acceso": 85.99,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 17.19,
+        "apparent_temperature_min": 8.41,
+        "precipitation_sum": 1.32,
+        "precipitation_hours": 1.83
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 81.29,
+        "apparent_temperature_min": 70.11,
+        "precipitation_sum": 86.77,
+        "precipitation_hours": 84.72
+      },
+      "distancia_km": 119.99,
+      "duracion_viaje_minutos": 118.84,
+      "posicion_general": 30,
+      "posicion_en_finde": 7
+    },
+    {
+      "finde_id": "2026-05-16",
+      "inicio": "2026-05-16",
+      "fin": "2026-05-18",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Batalla de las Piedras"
+      ],
+      "destino_id": "colonia_del_sacramento",
+      "destino": "Colonia del Sacramento",
+      "puntaje_final": 81.5,
+      "puntaje_clima": 82.2,
+      "puntaje_acceso": 79.9,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 16.21,
+        "apparent_temperature_min": 9.15,
+        "precipitation_sum": 0.92,
+        "precipitation_hours": 1.8
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 74.73,
+        "apparent_temperature_min": 76.25,
+        "precipitation_sum": 90.8,
+        "precipitation_hours": 85.0
+      },
+      "distancia_km": 179.85,
+      "duracion_viaje_minutos": 144.41,
+      "posicion_general": 31,
+      "posicion_en_finde": 1
+    },
+    {
+      "finde_id": "2026-05-01",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-03",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Trabajadores"
+      ],
+      "destino_id": "colonia_del_sacramento",
+      "destino": "Colonia del Sacramento",
+      "puntaje_final": 81.27,
+      "puntaje_clima": 81.92,
+      "puntaje_acceso": 79.9,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 17.51,
+        "apparent_temperature_min": 10.38,
+        "precipitation_sum": 2.2,
+        "precipitation_hours": 2.17
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 83.4,
+        "apparent_temperature_min": 86.5,
+        "precipitation_sum": 78.03,
+        "precipitation_hours": 81.94
+      },
+      "distancia_km": 179.85,
+      "duracion_viaje_minutos": 144.41,
+      "posicion_general": 32,
+      "posicion_en_finde": 8
+    },
+    {
+      "finde_id": "2026-12-25",
+      "inicio": "2026-12-25",
+      "fin": "2026-12-27",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Familia"
+      ],
+      "destino_id": "colonia_del_sacramento",
+      "destino": "Colonia del Sacramento",
+      "puntaje_final": 81.2,
+      "puntaje_clima": 81.82,
+      "puntaje_acceso": 79.9,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 29.42,
+        "apparent_temperature_min": 18.97,
+        "precipitation_sum": 3.45,
+        "precipitation_hours": 2.03
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 88.14,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 65.5,
+        "precipitation_hours": 83.06
+      },
+      "distancia_km": 179.85,
+      "duracion_viaje_minutos": 144.41,
+      "posicion_general": 33,
+      "posicion_en_finde": 10
+    },
+    {
+      "finde_id": "2026-04-02",
+      "inicio": "2026-04-02",
+      "fin": "2026-04-05",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Semana de Turismo"
+      ],
+      "destino_id": "la_paloma",
+      "destino": "La Paloma",
+      "puntaje_final": 80.79,
+      "puntaje_clima": 82.62,
+      "puntaje_acceso": 64.61,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 23.24,
+        "apparent_temperature_min": 15.95,
+        "precipitation_sum": 3.43,
+        "precipitation_hours": 4.3
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 65.7,
+        "precipitation_hours": 64.17
+      },
+      "distancia_km": 224.68,
+      "duracion_viaje_minutos": 208.65,
+      "posicion_general": 34,
+      "posicion_en_finde": 7
+    },
+    {
+      "finde_id": "2026-05-01",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-03",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Trabajadores"
+      ],
+      "destino_id": "punta_del_diablo",
+      "destino": "Punta del Diablo",
+      "puntaje_final": 80.78,
+      "puntaje_clima": 86.39,
+      "puntaje_acceso": 52.76,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 18.76,
+        "apparent_temperature_min": 12.48,
+        "precipitation_sum": 2.17,
+        "precipitation_hours": 2.83
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 91.73,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 78.33,
+        "precipitation_hours": 76.39
+      },
+      "distancia_km": 291.87,
+      "duracion_viaje_minutos": 258.41,
+      "posicion_general": 35,
+      "posicion_en_finde": 9
+    },
+    {
+      "finde_id": "2026-05-01",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-03",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Trabajadores"
+      ],
+      "destino_id": "villa_serrana",
+      "destino": "Villa Serrana",
+      "puntaje_final": 79.85,
+      "puntaje_clima": 80.2,
+      "puntaje_acceso": 79.6,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 16.85,
+        "apparent_temperature_min": 8.14,
+        "precipitation_sum": 1.36,
+        "precipitation_hours": 1.83
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 78.98,
+        "apparent_temperature_min": 67.86,
+        "precipitation_sum": 86.37,
+        "precipitation_hours": 84.72
+      },
+      "distancia_km": 150.6,
+      "duracion_viaje_minutos": 145.7,
+      "posicion_general": 36,
+      "posicion_en_finde": 10
+    },
+    {
+      "finde_id": "2026-04-02",
+      "inicio": "2026-04-02",
+      "fin": "2026-04-05",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Semana de Turismo"
+      ],
+      "destino_id": "punta_del_diablo",
+      "destino": "Punta del Diablo",
+      "puntaje_final": 79.83,
+      "puntaje_clima": 83.65,
+      "puntaje_acceso": 52.76,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 23.53,
+        "apparent_temperature_min": 17.05,
+        "precipitation_sum": 3.1,
+        "precipitation_hours": 4.4
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 69.0,
+        "precipitation_hours": 63.33
+      },
+      "distancia_km": 291.87,
+      "duracion_viaje_minutos": 258.41,
+      "posicion_general": 37,
+      "posicion_en_finde": 8
+    },
+    {
+      "finde_id": "2026-04-02",
+      "inicio": "2026-04-02",
+      "fin": "2026-04-05",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Semana de Turismo"
+      ],
+      "destino_id": "aguas_dulces",
+      "destino": "Aguas Dulces",
+      "puntaje_final": 79.65,
+      "puntaje_clima": 82.52,
+      "puntaje_acceso": 57.58,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 23.34,
+        "apparent_temperature_min": 16.47,
+        "precipitation_sum": 3.3,
+        "precipitation_hours": 4.75
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 67.03,
+        "precipitation_hours": 60.42
+      },
+      "distancia_km": 265.07,
+      "duracion_viaje_minutos": 238.17,
+      "posicion_general": 38,
+      "posicion_en_finde": 9
+    },
+    {
+      "finde_id": "2026-04-02",
+      "inicio": "2026-04-02",
+      "fin": "2026-04-05",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Semana de Turismo"
+      ],
+      "destino_id": "carmelo",
+      "destino": "Carmelo",
+      "puntaje_final": 79.56,
+      "puntaje_clima": 81.05,
+      "puntaje_acceso": 64.8,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 24.51,
+        "apparent_temperature_min": 15.57,
+        "precipitation_sum": 4.41,
+        "precipitation_hours": 2.83
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 55.95,
+        "precipitation_hours": 76.46
+      },
+      "distancia_km": 239.14,
+      "duracion_viaje_minutos": 207.85,
+      "posicion_general": 39,
+      "posicion_en_finde": 10
+    },
+    {
+      "finde_id": "2026-05-16",
+      "inicio": "2026-05-16",
+      "fin": "2026-05-18",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Batalla de las Piedras"
+      ],
+      "destino_id": "carmelo",
+      "destino": "Carmelo",
+      "puntaje_final": 79.52,
+      "puntaje_clima": 82.56,
+      "puntaje_acceso": 64.8,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 16.94,
+        "apparent_temperature_min": 8.98,
+        "precipitation_sum": 1.13,
+        "precipitation_hours": 1.87
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 79.62,
+        "apparent_temperature_min": 74.83,
+        "precipitation_sum": 88.7,
+        "precipitation_hours": 84.44
+      },
+      "distancia_km": 239.14,
+      "duracion_viaje_minutos": 207.85,
+      "posicion_general": 40,
+      "posicion_en_finde": 2
+    },
+    {
+      "finde_id": "2026-02-14",
+      "inicio": "2026-02-14",
+      "fin": "2026-02-17",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Carnaval"
+      ],
+      "destino_id": "aguas_dulces",
+      "destino": "Aguas Dulces",
+      "puntaje_final": 79.41,
+      "puntaje_clima": 82.22,
+      "puntaje_acceso": 57.58,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 28.13,
+        "apparent_temperature_min": 20.41,
+        "precipitation_sum": 3.48,
+        "precipitation_hours": 3.58
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 98.94,
+        "apparent_temperature_min": 95.9,
+        "precipitation_sum": 65.22,
+        "precipitation_hours": 70.21
+      },
+      "distancia_km": 265.07,
+      "duracion_viaje_minutos": 238.17,
+      "posicion_general": 41,
+      "posicion_en_finde": 9
+    },
+    {
+      "finde_id": "2026-02-14",
+      "inicio": "2026-02-14",
+      "fin": "2026-02-17",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Carnaval"
+      ],
+      "destino_id": "cabo_polonio",
+      "destino": "Cabo Polonio",
+      "puntaje_final": 79.16,
+      "puntaje_clima": 82.4,
+      "puntaje_acceso": 54.95,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 28.06,
+        "apparent_temperature_min": 20.29,
+        "precipitation_sum": 3.51,
+        "precipitation_hours": 3.65
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 99.48,
+        "apparent_temperature_min": 97.08,
+        "precipitation_sum": 64.88,
+        "precipitation_hours": 69.58
+      },
+      "distancia_km": 273.98,
+      "duracion_viaje_minutos": 249.22,
+      "posicion_general": 42,
+      "posicion_en_finde": 10
+    },
+    {
+      "finde_id": "2026-04-02",
+      "inicio": "2026-04-02",
+      "fin": "2026-04-05",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Semana de Turismo"
+      ],
+      "destino_id": "cabo_polonio",
+      "destino": "Cabo Polonio",
+      "puntaje_final": 79.06,
+      "puntaje_clima": 82.28,
+      "puntaje_acceso": 54.95,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 23.29,
+        "apparent_temperature_min": 16.35,
+        "precipitation_sum": 3.37,
+        "precipitation_hours": 4.75
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 66.33,
+        "precipitation_hours": 60.42
+      },
+      "distancia_km": 273.98,
+      "duracion_viaje_minutos": 249.22,
+      "posicion_general": 43,
+      "posicion_en_finde": 11
+    },
+    {
+      "finde_id": "2026-05-16",
+      "inicio": "2026-05-16",
+      "fin": "2026-05-18",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Batalla de las Piedras"
+      ],
+      "destino_id": "piriapolis",
+      "destino": "Piriápolis",
+      "puntaje_final": 78.96,
+      "puntaje_clima": 77.45,
+      "puntaje_acceso": 88.31,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 15.77,
+        "apparent_temperature_min": 9.5,
+        "precipitation_sum": 1.76,
+        "precipitation_hours": 3.0
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 71.78,
+        "apparent_temperature_min": 79.19,
+        "precipitation_sum": 82.37,
+        "precipitation_hours": 75.0
+      },
+      "distancia_km": 99.02,
+      "duracion_viaje_minutos": 109.08,
+      "posicion_general": 44,
+      "posicion_en_finde": 3
+    },
+    {
+      "finde_id": "2026-02-14",
+      "inicio": "2026-02-14",
+      "fin": "2026-02-17",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Carnaval"
+      ],
+      "destino_id": "mercedes",
+      "destino": "Mercedes",
+      "puntaje_final": 78.57,
+      "puntaje_clima": 80.61,
+      "puntaje_acceso": 60.54,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 30.8,
+        "apparent_temperature_min": 19.48,
+        "precipitation_sum": 2.71,
+        "precipitation_hours": 2.33
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 76.69,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 72.88,
+        "precipitation_hours": 80.62
+      },
+      "distancia_km": 282.83,
+      "duracion_viaje_minutos": 225.72,
+      "posicion_general": 45,
+      "posicion_en_finde": 11
+    },
+    {
+      "finde_id": "2026-12-25",
+      "inicio": "2026-12-25",
+      "fin": "2026-12-27",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Familia"
+      ],
+      "destino_id": "carmelo",
+      "destino": "Carmelo",
+      "puntaje_final": 78.31,
+      "puntaje_clima": 81.04,
+      "puntaje_acceso": 64.8,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 30.55,
+        "apparent_temperature_min": 19.73,
+        "precipitation_sum": 2.8,
+        "precipitation_hours": 2.23
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 78.75,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 72.03,
+        "precipitation_hours": 81.39
+      },
+      "distancia_km": 239.14,
+      "duracion_viaje_minutos": 207.85,
+      "posicion_general": 46,
+      "posicion_en_finde": 11
+    },
+    {
+      "finde_id": "2026-04-02",
+      "inicio": "2026-04-02",
+      "fin": "2026-04-05",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Semana de Turismo"
+      ],
+      "destino_id": "mercedes",
+      "destino": "Mercedes",
+      "puntaje_final": 78.2,
+      "puntaje_clima": 80.15,
+      "puntaje_acceso": 60.54,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 25.46,
+        "apparent_temperature_min": 15.23,
+        "precipitation_sum": 4.71,
+        "precipitation_hours": 2.67
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 52.85,
+        "precipitation_hours": 77.71
+      },
+      "distancia_km": 282.83,
+      "duracion_viaje_minutos": 225.72,
+      "posicion_general": 47,
+      "posicion_en_finde": 12
+    },
+    {
+      "finde_id": "2026-05-01",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-03",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Trabajadores"
+      ],
+      "destino_id": "carmelo",
+      "destino": "Carmelo",
+      "puntaje_final": 77.96,
+      "puntaje_clima": 80.61,
+      "puntaje_acceso": 64.8,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 18.29,
+        "apparent_temperature_min": 10.09,
+        "precipitation_sum": 2.89,
+        "precipitation_hours": 2.13
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 88.58,
+        "apparent_temperature_min": 84.08,
+        "precipitation_sum": 71.1,
+        "precipitation_hours": 82.22
+      },
+      "distancia_km": 239.14,
+      "duracion_viaje_minutos": 207.85,
+      "posicion_general": 48,
+      "posicion_en_finde": 11
+    },
+    {
+      "finde_id": "2026-05-01",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-03",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Trabajadores"
+      ],
+      "destino_id": "mercedes",
+      "destino": "Mercedes",
+      "puntaje_final": 77.58,
+      "puntaje_clima": 80.94,
+      "puntaje_acceso": 60.54,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 19.35,
+        "apparent_temperature_min": 9.76,
+        "precipitation_sum": 3.32,
+        "precipitation_hours": 1.93
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 95.67,
+        "apparent_temperature_min": 81.31,
+        "precipitation_sum": 66.83,
+        "precipitation_hours": 83.89
+      },
+      "distancia_km": 282.83,
+      "duracion_viaje_minutos": 225.72,
+      "posicion_general": 49,
+      "posicion_en_finde": 12
+    },
+    {
+      "finde_id": "2026-05-16",
+      "inicio": "2026-05-16",
+      "fin": "2026-05-18",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Batalla de las Piedras"
+      ],
+      "destino_id": "jose_ignacio",
+      "destino": "José Ignacio",
+      "puntaje_final": 77.5,
+      "puntaje_clima": 77.79,
+      "puntaje_acceso": 76.78,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 15.49,
+        "apparent_temperature_min": 9.74,
+        "precipitation_sum": 1.68,
+        "precipitation_hours": 2.83
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 69.96,
+        "apparent_temperature_min": 81.14,
+        "precipitation_sum": 83.2,
+        "precipitation_hours": 76.39
+      },
+      "distancia_km": 158.1,
+      "duracion_viaje_minutos": 157.53,
+      "posicion_general": 50,
+      "posicion_en_finde": 4
+    },
+    {
+      "finde_id": "2026-10-10",
+      "inicio": "2026-10-10",
+      "fin": "2026-10-12",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Raza"
+      ],
+      "destino_id": "mercedes",
+      "destino": "Mercedes",
+      "puntaje_final": 77.42,
+      "puntaje_clima": 80.73,
+      "puntaje_acceso": 60.54,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 20.41,
+        "apparent_temperature_min": 9.87,
+        "precipitation_sum": 3.16,
+        "precipitation_hours": 3.73
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 82.25,
+        "precipitation_sum": 68.43,
+        "precipitation_hours": 68.89
+      },
+      "distancia_km": 282.83,
+      "duracion_viaje_minutos": 225.72,
+      "posicion_general": 51,
+      "posicion_en_finde": 1
+    },
+    {
+      "finde_id": "2026-05-16",
+      "inicio": "2026-05-16",
+      "fin": "2026-05-18",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Batalla de las Piedras"
+      ],
+      "destino_id": "punta_del_este",
+      "destino": "Punta del Este",
+      "puntaje_final": 77.38,
+      "puntaje_clima": 76.67,
+      "puntaje_acceso": 81.99,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 15.41,
+        "apparent_temperature_min": 9.74,
+        "precipitation_sum": 1.98,
+        "precipitation_hours": 2.77
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 69.42,
+        "apparent_temperature_min": 81.14,
+        "precipitation_sum": 80.2,
+        "precipitation_hours": 76.94
+      },
+      "distancia_km": 132.48,
+      "duracion_viaje_minutos": 135.64,
+      "posicion_general": 52,
+      "posicion_en_finde": 5
+    },
+    {
+      "finde_id": "2026-05-16",
+      "inicio": "2026-05-16",
+      "fin": "2026-05-18",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Batalla de las Piedras"
+      ],
+      "destino_id": "mercedes",
+      "destino": "Mercedes",
+      "puntaje_final": 77.37,
+      "puntaje_clima": 80.67,
+      "puntaje_acceso": 60.54,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 17.19,
+        "apparent_temperature_min": 8.49,
+        "precipitation_sum": 1.7,
+        "precipitation_hours": 1.53
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 81.27,
+        "apparent_temperature_min": 70.72,
+        "precipitation_sum": 83.03,
+        "precipitation_hours": 87.22
+      },
+      "distancia_km": 282.83,
+      "duracion_viaje_minutos": 225.72,
+      "posicion_general": 53,
+      "posicion_en_finde": 6
+    },
+    {
+      "finde_id": "2026-02-14",
+      "inicio": "2026-02-14",
+      "fin": "2026-02-17",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Carnaval"
+      ],
+      "destino_id": "punta_del_diablo",
+      "destino": "Punta del Diablo",
+      "puntaje_final": 77.28,
+      "puntaje_clima": 80.46,
+      "puntaje_acceso": 52.76,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 28.29,
+        "apparent_temperature_min": 20.76,
+        "precipitation_sum": 3.47,
+        "precipitation_hours": 4.12
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 97.6,
+        "apparent_temperature_min": 92.4,
+        "precipitation_sum": 65.3,
+        "precipitation_hours": 65.62
+      },
+      "distancia_km": 291.87,
+      "duracion_viaje_minutos": 258.41,
+      "posicion_general": 54,
+      "posicion_en_finde": 12
+    },
+    {
+      "finde_id": "2026-05-16",
+      "inicio": "2026-05-16",
+      "fin": "2026-05-18",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Batalla de las Piedras"
+      ],
+      "destino_id": "punta_del_diablo",
+      "destino": "Punta del Diablo",
+      "puntaje_final": 77.23,
+      "puntaje_clima": 81.96,
+      "puntaje_acceso": 52.76,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 15.85,
+        "apparent_temperature_min": 10.25,
+        "precipitation_sum": 1.03,
+        "precipitation_hours": 2.57
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 72.36,
+        "apparent_temperature_min": 85.39,
+        "precipitation_sum": 89.67,
+        "precipitation_hours": 78.61
+      },
+      "distancia_km": 291.87,
+      "duracion_viaje_minutos": 258.41,
+      "posicion_general": 55,
+      "posicion_en_finde": 7
+    },
+    {
+      "finde_id": "2026-10-31",
+      "inicio": "2026-10-31",
+      "fin": "2026-11-02",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Difuntos"
+      ],
+      "destino_id": "colonia_del_sacramento",
+      "destino": "Colonia del Sacramento",
+      "puntaje_final": 77.17,
+      "puntaje_clima": 76.8,
+      "puntaje_acceso": 79.9,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 20.69,
+        "apparent_temperature_min": 11.38,
+        "precipitation_sum": 4.82,
+        "precipitation_hours": 4.23
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 94.81,
+        "precipitation_sum": 51.8,
+        "precipitation_hours": 64.72
+      },
+      "distancia_km": 179.85,
+      "duracion_viaje_minutos": 144.41,
+      "posicion_general": 56,
+      "posicion_en_finde": 1
+    },
+    {
+      "finde_id": "2026-05-16",
+      "inicio": "2026-05-16",
+      "fin": "2026-05-18",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Batalla de las Piedras"
+      ],
+      "destino_id": "aguas_dulces",
+      "destino": "Aguas Dulces",
+      "puntaje_final": 77.07,
+      "puntaje_clima": 80.85,
+      "puntaje_acceso": 57.58,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 15.73,
+        "apparent_temperature_min": 10.22,
+        "precipitation_sum": 1.22,
+        "precipitation_hours": 2.7
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 71.53,
+        "apparent_temperature_min": 85.14,
+        "precipitation_sum": 87.83,
+        "precipitation_hours": 77.5
+      },
+      "distancia_km": 265.07,
+      "duracion_viaje_minutos": 238.17,
+      "posicion_general": 57,
+      "posicion_en_finde": 8
+    },
+    {
+      "finde_id": "2026-04-02",
+      "inicio": "2026-04-02",
+      "fin": "2026-04-05",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Semana de Turismo"
+      ],
+      "destino_id": "tacuarembo",
+      "destino": "Tacuarembó",
+      "puntaje_final": 76.82,
+      "puntaje_clima": 82.2,
+      "puntaje_acceso": 40.37,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 26.32,
+        "apparent_temperature_min": 15.13,
+        "precipitation_sum": 3.85,
+        "precipitation_hours": 3.48
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 61.55,
+        "precipitation_hours": 71.04
+      },
+      "distancia_km": 396.05,
+      "duracion_viaje_minutos": 310.43,
+      "posicion_general": 58,
+      "posicion_en_finde": 13
+    },
+    {
+      "finde_id": "2026-10-31",
+      "inicio": "2026-10-31",
+      "fin": "2026-11-02",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Difuntos"
+      ],
+      "destino_id": "mercedes",
+      "destino": "Mercedes",
+      "puntaje_final": 76.65,
+      "puntaje_clima": 79.77,
+      "puntaje_acceso": 60.54,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 22.85,
+        "apparent_temperature_min": 11.4,
+        "precipitation_sum": 4.52,
+        "precipitation_hours": 2.73
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 94.97,
+        "precipitation_sum": 54.83,
+        "precipitation_hours": 77.22
+      },
+      "distancia_km": 282.83,
+      "duracion_viaje_minutos": 225.72,
+      "posicion_general": 59,
+      "posicion_en_finde": 2
+    },
+    {
+      "finde_id": "2026-10-31",
+      "inicio": "2026-10-31",
+      "fin": "2026-11-02",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Difuntos"
+      ],
+      "destino_id": "punta_del_este",
+      "destino": "Punta del Este",
+      "puntaje_final": 76.36,
+      "puntaje_clima": 75.39,
+      "puntaje_acceso": 81.99,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 18.59,
+        "apparent_temperature_min": 10.65,
+        "precipitation_sum": 4.13,
+        "precipitation_hours": 4.07
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 90.62,
+        "apparent_temperature_min": 88.78,
+        "precipitation_sum": 58.67,
+        "precipitation_hours": 66.11
+      },
+      "distancia_km": 132.48,
+      "duracion_viaje_minutos": 135.64,
+      "posicion_general": 60,
+      "posicion_en_finde": 3
+    },
+    {
+      "finde_id": "2026-05-16",
+      "inicio": "2026-05-16",
+      "fin": "2026-05-18",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Batalla de las Piedras"
+      ],
+      "destino_id": "cabo_polonio",
+      "destino": "Cabo Polonio",
+      "puntaje_final": 76.17,
+      "puntaje_clima": 80.22,
+      "puntaje_acceso": 54.95,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 15.61,
+        "apparent_temperature_min": 10.04,
+        "precipitation_sum": 1.23,
+        "precipitation_hours": 2.73
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 70.71,
+        "apparent_temperature_min": 83.67,
+        "precipitation_sum": 87.7,
+        "precipitation_hours": 77.22
+      },
+      "distancia_km": 273.98,
+      "duracion_viaje_minutos": 249.22,
+      "posicion_general": 61,
+      "posicion_en_finde": 9
+    },
+    {
+      "finde_id": "2026-12-25",
+      "inicio": "2026-12-25",
+      "fin": "2026-12-27",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Familia"
+      ],
+      "destino_id": "mercedes",
+      "destino": "Mercedes",
+      "puntaje_final": 76.15,
+      "puntaje_clima": 79.15,
+      "puntaje_acceso": 60.54,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 31.91,
+        "apparent_temperature_min": 19.04,
+        "precipitation_sum": 2.51,
+        "precipitation_hours": 1.83
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 67.39,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 74.93,
+        "precipitation_hours": 84.72
+      },
+      "distancia_km": 282.83,
+      "duracion_viaje_minutos": 225.72,
+      "posicion_general": 62,
+      "posicion_en_finde": 12
+    },
+    {
+      "finde_id": "2026-10-10",
+      "inicio": "2026-10-10",
+      "fin": "2026-10-12",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Raza"
+      ],
+      "destino_id": "termas_del_dayman",
+      "destino": "Termas del Daymán",
+      "puntaje_final": 76.0,
+      "puntaje_clima": 85.35,
+      "puntaje_acceso": 26.5,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 22.35,
+        "apparent_temperature_min": 11.06,
+        "precipitation_sum": 2.57,
+        "precipitation_hours": 3.27
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 92.19,
+        "precipitation_sum": 74.27,
+        "precipitation_hours": 72.78
+      },
+      "distancia_km": 481.05,
+      "duracion_viaje_minutos": 368.7,
+      "posicion_general": 63,
+      "posicion_en_finde": 2
+    },
+    {
+      "finde_id": "2026-05-16",
+      "inicio": "2026-05-16",
+      "fin": "2026-05-18",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Batalla de las Piedras"
+      ],
+      "destino_id": "la_paloma",
+      "destino": "La Paloma",
+      "puntaje_final": 75.82,
+      "puntaje_clima": 77.97,
+      "puntaje_acceso": 64.61,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 15.5,
+        "apparent_temperature_min": 9.92,
+        "precipitation_sum": 1.63,
+        "precipitation_hours": 3.1
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 70.02,
+        "apparent_temperature_min": 82.67,
+        "precipitation_sum": 83.73,
+        "precipitation_hours": 74.17
+      },
+      "distancia_km": 224.68,
+      "duracion_viaje_minutos": 208.65,
+      "posicion_general": 64,
+      "posicion_en_finde": 10
+    },
+    {
+      "finde_id": "2026-10-10",
+      "inicio": "2026-10-10",
+      "fin": "2026-10-12",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Raza"
+      ],
+      "destino_id": "salto",
+      "destino": "Salto",
+      "puntaje_final": 75.74,
+      "puntaje_clima": 85.43,
+      "puntaje_acceso": 24.29,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 22.31,
+        "apparent_temperature_min": 11.48,
+        "precipitation_sum": 2.79,
+        "precipitation_hours": 3.13
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 95.64,
+        "precipitation_sum": 72.07,
+        "precipitation_hours": 73.89
+      },
+      "distancia_km": 490.31,
+      "duracion_viaje_minutos": 377.97,
+      "posicion_general": 65,
+      "posicion_en_finde": 3
+    },
+    {
+      "finde_id": "2026-05-16",
+      "inicio": "2026-05-16",
+      "fin": "2026-05-18",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Batalla de las Piedras"
+      ],
+      "destino_id": "minas",
+      "destino": "Minas",
+      "puntaje_final": 75.44,
+      "puntaje_clima": 73.49,
+      "puntaje_acceso": 85.99,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 14.77,
+        "apparent_temperature_min": 7.17,
+        "precipitation_sum": 1.38,
+        "precipitation_hours": 2.53
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 65.11,
+        "apparent_temperature_min": 59.75,
+        "precipitation_sum": 86.2,
+        "precipitation_hours": 78.89
+      },
+      "distancia_km": 119.99,
+      "duracion_viaje_minutos": 118.84,
+      "posicion_general": 66,
+      "posicion_en_finde": 11
+    },
+    {
+      "finde_id": "2026-05-16",
+      "inicio": "2026-05-16",
+      "fin": "2026-05-18",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Batalla de las Piedras"
+      ],
+      "destino_id": "tacuarembo",
+      "destino": "Tacuarembó",
+      "puntaje_final": 75.16,
+      "puntaje_clima": 81.69,
+      "puntaje_acceso": 40.37,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 17.1,
+        "apparent_temperature_min": 7.64,
+        "precipitation_sum": 0.97,
+        "precipitation_hours": 1.47
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 80.64,
+        "apparent_temperature_min": 63.64,
+        "precipitation_sum": 90.3,
+        "precipitation_hours": 87.78
+      },
+      "distancia_km": 396.05,
+      "duracion_viaje_minutos": 310.43,
+      "posicion_general": 67,
+      "posicion_en_finde": 12
+    },
+    {
+      "finde_id": "2026-10-10",
+      "inicio": "2026-10-10",
+      "fin": "2026-10-12",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Raza"
+      ],
+      "destino_id": "colonia_del_sacramento",
+      "destino": "Colonia del Sacramento",
+      "puntaje_final": 74.67,
+      "puntaje_clima": 73.67,
+      "puntaje_acceso": 79.9,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 18.68,
+        "apparent_temperature_min": 10.53,
+        "precipitation_sum": 4.94,
+        "precipitation_hours": 3.17
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 91.22,
+        "apparent_temperature_min": 87.72,
+        "precipitation_sum": 50.63,
+        "precipitation_hours": 73.61
+      },
+      "distancia_km": 179.85,
+      "duracion_viaje_minutos": 144.41,
+      "posicion_general": 68,
+      "posicion_en_finde": 4
+    },
+    {
+      "finde_id": "2026-10-31",
+      "inicio": "2026-10-31",
+      "fin": "2026-11-02",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Difuntos"
+      ],
+      "destino_id": "la_paloma",
+      "destino": "La Paloma",
+      "puntaje_final": 74.65,
+      "puntaje_clima": 76.51,
+      "puntaje_acceso": 64.61,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 18.12,
+        "apparent_temperature_min": 11.44,
+        "precipitation_sum": 3.95,
+        "precipitation_hours": 3.97
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 87.49,
+        "apparent_temperature_min": 95.31,
+        "precipitation_sum": 60.47,
+        "precipitation_hours": 66.94
+      },
+      "distancia_km": 224.68,
+      "duracion_viaje_minutos": 208.65,
+      "posicion_general": 69,
+      "posicion_en_finde": 4
+    },
+    {
+      "finde_id": "2026-02-14",
+      "inicio": "2026-02-14",
+      "fin": "2026-02-17",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Carnaval"
+      ],
+      "destino_id": "tacuarembo",
+      "destino": "Tacuarembó",
+      "puntaje_final": 74.57,
+      "puntaje_clima": 79.39,
+      "puntaje_acceso": 40.37,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 30.34,
+        "apparent_temperature_min": 19.21,
+        "precipitation_sum": 2.92,
+        "precipitation_hours": 3.62
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 80.46,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 70.83,
+        "precipitation_hours": 69.79
+      },
+      "distancia_km": 396.05,
+      "duracion_viaje_minutos": 310.43,
+      "posicion_general": 70,
+      "posicion_en_finde": 13
+    },
+    {
+      "finde_id": "2026-05-16",
+      "inicio": "2026-05-16",
+      "fin": "2026-05-18",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Batalla de las Piedras"
+      ],
+      "destino_id": "salto",
+      "destino": "Salto",
+      "puntaje_final": 74.41,
+      "puntaje_clima": 83.77,
+      "puntaje_acceso": 24.29,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 18.36,
+        "apparent_temperature_min": 9.89,
+        "precipitation_sum": 2.17,
+        "precipitation_hours": 1.47
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 89.07,
+        "apparent_temperature_min": 82.42,
+        "precipitation_sum": 78.3,
+        "precipitation_hours": 87.78
+      },
+      "distancia_km": 490.31,
+      "duracion_viaje_minutos": 377.97,
+      "posicion_general": 71,
+      "posicion_en_finde": 13
+    },
+    {
+      "finde_id": "2026-10-10",
+      "inicio": "2026-10-10",
+      "fin": "2026-10-12",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Raza"
+      ],
+      "destino_id": "carmelo",
+      "destino": "Carmelo",
+      "puntaje_final": 73.94,
+      "puntaje_clima": 75.59,
+      "puntaje_acceso": 64.8,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 19.36,
+        "apparent_temperature_min": 10.62,
+        "precipitation_sum": 4.46,
+        "precipitation_hours": 4.17
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 95.71,
+        "apparent_temperature_min": 88.47,
+        "precipitation_sum": 55.4,
+        "precipitation_hours": 65.28
+      },
+      "distancia_km": 239.14,
+      "duracion_viaje_minutos": 207.85,
+      "posicion_general": 72,
+      "posicion_en_finde": 5
+    },
+    {
+      "finde_id": "2026-05-16",
+      "inicio": "2026-05-16",
+      "fin": "2026-05-18",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Batalla de las Piedras"
+      ],
+      "destino_id": "villa_serrana",
+      "destino": "Villa Serrana",
+      "puntaje_final": 73.9,
+      "puntaje_clima": 72.77,
+      "puntaje_acceso": 79.6,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 14.24,
+        "apparent_temperature_min": 6.88,
+        "precipitation_sum": 1.05,
+        "precipitation_hours": 2.8
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 61.6,
+        "apparent_temperature_min": 57.36,
+        "precipitation_sum": 89.47,
+        "precipitation_hours": 76.67
+      },
+      "distancia_km": 150.6,
+      "duracion_viaje_minutos": 145.7,
+      "posicion_general": 73,
+      "posicion_en_finde": 14
+    },
+    {
+      "finde_id": "2026-05-16",
+      "inicio": "2026-05-16",
+      "fin": "2026-05-18",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Batalla de las Piedras"
+      ],
+      "destino_id": "termas_del_dayman",
+      "destino": "Termas del Daymán",
+      "puntaje_final": 73.78,
+      "puntaje_clima": 82.57,
+      "puntaje_acceso": 26.5,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 18.39,
+        "apparent_temperature_min": 9.38,
+        "precipitation_sum": 2.3,
+        "precipitation_hours": 1.43
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 89.29,
+        "apparent_temperature_min": 78.19,
+        "precipitation_sum": 76.97,
+        "precipitation_hours": 88.06
+      },
+      "distancia_km": 481.05,
+      "duracion_viaje_minutos": 368.7,
+      "posicion_general": 74,
+      "posicion_en_finde": 15
+    },
+    {
+      "finde_id": "2026-10-31",
+      "inicio": "2026-10-31",
+      "fin": "2026-11-02",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Difuntos"
+      ],
+      "destino_id": "carmelo",
+      "destino": "Carmelo",
+      "puntaje_final": 73.57,
+      "puntaje_clima": 75.13,
+      "puntaje_acceso": 64.8,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 21.59,
+        "apparent_temperature_min": 11.37,
+        "precipitation_sum": 5.54,
+        "precipitation_hours": 3.53
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 94.75,
+        "precipitation_sum": 44.57,
+        "precipitation_hours": 70.56
+      },
+      "distancia_km": 239.14,
+      "duracion_viaje_minutos": 207.85,
+      "posicion_general": 75,
+      "posicion_en_finde": 5
+    },
+    {
+      "finde_id": "2026-10-10",
+      "inicio": "2026-10-10",
+      "fin": "2026-10-12",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Raza"
+      ],
+      "destino_id": "piriapolis",
+      "destino": "Piriápolis",
+      "puntaje_final": 73.23,
+      "puntaje_clima": 70.3,
+      "puntaje_acceso": 88.31,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 17.3,
+        "apparent_temperature_min": 9.19,
+        "precipitation_sum": 3.89,
+        "precipitation_hours": 4.8
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 82.0,
+        "apparent_temperature_min": 76.61,
+        "precipitation_sum": 61.07,
+        "precipitation_hours": 60.0
+      },
+      "distancia_km": 99.02,
+      "duracion_viaje_minutos": 109.08,
+      "posicion_general": 76,
+      "posicion_en_finde": 6
+    },
+    {
+      "finde_id": "2026-10-31",
+      "inicio": "2026-10-31",
+      "fin": "2026-11-02",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Difuntos"
+      ],
+      "destino_id": "jose_ignacio",
+      "destino": "José Ignacio",
+      "puntaje_final": 73.22,
+      "puntaje_clima": 72.44,
+      "puntaje_acceso": 76.78,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 17.95,
+        "apparent_temperature_min": 10.69,
+        "precipitation_sum": 4.63,
+        "precipitation_hours": 4.07
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 86.36,
+        "apparent_temperature_min": 89.06,
+        "precipitation_sum": 53.73,
+        "precipitation_hours": 66.11
+      },
+      "distancia_km": 158.1,
+      "duracion_viaje_minutos": 157.53,
+      "posicion_general": 77,
+      "posicion_en_finde": 6
+    },
+    {
+      "finde_id": "2026-10-31",
+      "inicio": "2026-10-31",
+      "fin": "2026-11-02",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Difuntos"
+      ],
+      "destino_id": "piriapolis",
+      "destino": "Piriápolis",
+      "puntaje_final": 73.04,
+      "puntaje_clima": 70.05,
+      "puntaje_acceso": 88.31,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 19.08,
+        "apparent_temperature_min": 10.59,
+        "precipitation_sum": 5.74,
+        "precipitation_hours": 4.53
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 93.89,
+        "apparent_temperature_min": 88.28,
+        "precipitation_sum": 42.57,
+        "precipitation_hours": 62.22
+      },
+      "distancia_km": 99.02,
+      "duracion_viaje_minutos": 109.08,
+      "posicion_general": 78,
+      "posicion_en_finde": 7
+    },
+    {
+      "finde_id": "2026-10-31",
+      "inicio": "2026-10-31",
+      "fin": "2026-11-02",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Difuntos"
+      ],
+      "destino_id": "aguas_dulces",
+      "destino": "Aguas Dulces",
+      "puntaje_final": 72.87,
+      "puntaje_clima": 75.6,
+      "puntaje_acceso": 57.58,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 18.19,
+        "apparent_temperature_min": 11.76,
+        "precipitation_sum": 4.49,
+        "precipitation_hours": 3.73
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 87.96,
+        "apparent_temperature_min": 97.97,
+        "precipitation_sum": 55.1,
+        "precipitation_hours": 68.89
+      },
+      "distancia_km": 265.07,
+      "duracion_viaje_minutos": 238.17,
+      "posicion_general": 79,
+      "posicion_en_finde": 8
+    },
+    {
+      "finde_id": "2026-10-31",
+      "inicio": "2026-10-31",
+      "fin": "2026-11-02",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Difuntos"
+      ],
+      "destino_id": "cabo_polonio",
+      "destino": "Cabo Polonio",
+      "puntaje_final": 72.84,
+      "puntaje_clima": 76.07,
+      "puntaje_acceso": 54.95,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 18.17,
+        "apparent_temperature_min": 11.65,
+        "precipitation_sum": 4.26,
+        "precipitation_hours": 3.83
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 87.78,
+        "apparent_temperature_min": 97.11,
+        "precipitation_sum": 57.43,
+        "precipitation_hours": 68.06
+      },
+      "distancia_km": 273.98,
+      "duracion_viaje_minutos": 249.22,
+      "posicion_general": 80,
+      "posicion_en_finde": 9
+    },
+    {
+      "finde_id": "2026-04-02",
+      "inicio": "2026-04-02",
+      "fin": "2026-04-05",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Semana de Turismo"
+      ],
+      "destino_id": "termas_del_dayman",
+      "destino": "Termas del Daymán",
+      "puntaje_final": 72.33,
+      "puntaje_clima": 79.19,
+      "puntaje_acceso": 26.5,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 27.56,
+        "apparent_temperature_min": 16.89,
+        "precipitation_sum": 4.73,
+        "precipitation_hours": 3.4
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 52.7,
+        "precipitation_hours": 71.67
+      },
+      "distancia_km": 481.05,
+      "duracion_viaje_minutos": 368.7,
+      "posicion_general": 81,
+      "posicion_en_finde": 14
+    },
+    {
+      "finde_id": "2026-05-01",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-03",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Trabajadores"
+      ],
+      "destino_id": "tacuarembo",
+      "destino": "Tacuarembó",
+      "puntaje_final": 72.07,
+      "puntaje_clima": 77.83,
+      "puntaje_acceso": 40.37,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 20.08,
+        "apparent_temperature_min": 10.09,
+        "precipitation_sum": 4.32,
+        "precipitation_hours": 3.1
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 84.06,
+        "precipitation_sum": 56.83,
+        "precipitation_hours": 74.17
+      },
+      "distancia_km": 396.05,
+      "duracion_viaje_minutos": 310.43,
+      "posicion_general": 82,
+      "posicion_en_finde": 13
+    },
+    {
+      "finde_id": "2026-10-31",
+      "inicio": "2026-10-31",
+      "fin": "2026-11-02",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Difuntos"
+      ],
+      "destino_id": "punta_del_diablo",
+      "destino": "Punta del Diablo",
+      "puntaje_final": 72.0,
+      "puntaje_clima": 75.42,
+      "puntaje_acceso": 52.76,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 18.65,
+        "apparent_temperature_min": 12.17,
+        "precipitation_sum": 4.93,
+        "precipitation_hours": 3.7
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 91.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 50.7,
+        "precipitation_hours": 69.17
+      },
+      "distancia_km": 291.87,
+      "duracion_viaje_minutos": 258.41,
+      "posicion_general": 83,
+      "posicion_en_finde": 10
+    },
+    {
+      "finde_id": "2026-10-10",
+      "inicio": "2026-10-10",
+      "fin": "2026-10-12",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Raza"
+      ],
+      "destino_id": "punta_del_este",
+      "destino": "Punta del Este",
+      "puntaje_final": 71.63,
+      "puntaje_clima": 69.47,
+      "puntaje_acceso": 81.99,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 16.74,
+        "apparent_temperature_min": 9.32,
+        "precipitation_sum": 3.95,
+        "precipitation_hours": 4.57
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 78.27,
+        "apparent_temperature_min": 77.69,
+        "precipitation_sum": 60.47,
+        "precipitation_hours": 61.94
+      },
+      "distancia_km": 132.48,
+      "duracion_viaje_minutos": 135.64,
+      "posicion_general": 84,
+      "posicion_en_finde": 7
+    },
+    {
+      "finde_id": "2026-04-02",
+      "inicio": "2026-04-02",
+      "fin": "2026-04-05",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Semana de Turismo"
+      ],
+      "destino_id": "salto",
+      "destino": "Salto",
+      "puntaje_final": 71.13,
+      "puntaje_clima": 78.11,
+      "puntaje_acceso": 24.29,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 27.52,
+        "apparent_temperature_min": 17.39,
+        "precipitation_sum": 5.09,
+        "precipitation_hours": 3.25
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 49.05,
+        "precipitation_hours": 72.92
+      },
+      "distancia_km": 490.31,
+      "duracion_viaje_minutos": 377.97,
+      "posicion_general": 85,
+      "posicion_en_finde": 15
+    },
+    {
+      "finde_id": "2026-12-25",
+      "inicio": "2026-12-25",
+      "fin": "2026-12-27",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Familia"
+      ],
+      "destino_id": "tacuarembo",
+      "destino": "Tacuarembó",
+      "puntaje_final": 70.68,
+      "puntaje_clima": 76.09,
+      "puntaje_acceso": 40.37,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 31.14,
+        "apparent_temperature_min": 18.07,
+        "precipitation_sum": 3.62,
+        "precipitation_hours": 2.7
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 73.83,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 63.77,
+        "precipitation_hours": 77.5
+      },
+      "distancia_km": 396.05,
+      "duracion_viaje_minutos": 310.43,
+      "posicion_general": 86,
+      "posicion_en_finde": 13
+    },
+    {
+      "finde_id": "2026-10-10",
+      "inicio": "2026-10-10",
+      "fin": "2026-10-12",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Raza"
+      ],
+      "destino_id": "minas",
+      "destino": "Minas",
+      "puntaje_final": 70.13,
+      "puntaje_clima": 66.85,
+      "puntaje_acceso": 85.99,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 17.33,
+        "apparent_temperature_min": 7.8,
+        "precipitation_sum": 4.14,
+        "precipitation_hours": 5.07
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 82.22,
+        "apparent_temperature_min": 64.97,
+        "precipitation_sum": 58.63,
+        "precipitation_hours": 57.78
+      },
+      "distancia_km": 119.99,
+      "duracion_viaje_minutos": 118.84,
+      "posicion_general": 87,
+      "posicion_en_finde": 8
+    },
+    {
+      "finde_id": "2026-06-19",
+      "inicio": "2026-06-19",
+      "fin": "2026-06-21",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Natalicio de Artigas y Día del Nunca Más"
+      ],
+      "destino_id": "piriapolis",
+      "destino": "Piriápolis",
+      "puntaje_final": 69.89,
+      "puntaje_clima": 66.11,
+      "puntaje_acceso": 88.31,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 12.34,
+        "apparent_temperature_min": 4.51,
+        "precipitation_sum": 1.24,
+        "precipitation_hours": 1.4
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 48.91,
+        "apparent_temperature_min": 37.58,
+        "precipitation_sum": 87.63,
+        "precipitation_hours": 88.33
+      },
+      "distancia_km": 99.02,
+      "duracion_viaje_minutos": 109.08,
+      "posicion_general": 88,
+      "posicion_en_finde": 1
+    },
+    {
+      "finde_id": "2026-10-31",
+      "inicio": "2026-10-31",
+      "fin": "2026-11-02",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Difuntos"
+      ],
+      "destino_id": "villa_serrana",
+      "destino": "Villa Serrana",
+      "puntaje_final": 69.2,
+      "puntaje_clima": 66.89,
+      "puntaje_acceso": 79.6,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 18.78,
+        "apparent_temperature_min": 8.63,
+        "precipitation_sum": 5.28,
+        "precipitation_hours": 5.27
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 91.84,
+        "apparent_temperature_min": 71.94,
+        "precipitation_sum": 47.23,
+        "precipitation_hours": 56.11
+      },
+      "distancia_km": 150.6,
+      "duracion_viaje_minutos": 145.7,
+      "posicion_general": 89,
+      "posicion_en_finde": 11
+    },
+    {
+      "finde_id": "2026-02-14",
+      "inicio": "2026-02-14",
+      "fin": "2026-02-17",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Carnaval"
+      ],
+      "destino_id": "termas_del_dayman",
+      "destino": "Termas del Daymán",
+      "puntaje_final": 68.95,
+      "puntaje_clima": 74.97,
+      "puntaje_acceso": 26.5,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 32.14,
+        "apparent_temperature_min": 20.82,
+        "precipitation_sum": 2.75,
+        "precipitation_hours": 2.73
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 65.5,
+        "apparent_temperature_min": 91.75,
+        "precipitation_sum": 72.5,
+        "precipitation_hours": 77.29
+      },
+      "distancia_km": 481.05,
+      "duracion_viaje_minutos": 368.7,
+      "posicion_general": 90,
+      "posicion_en_finde": 14
+    },
+    {
+      "finde_id": "2026-10-31",
+      "inicio": "2026-10-31",
+      "fin": "2026-11-02",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Difuntos"
+      ],
+      "destino_id": "minas",
+      "destino": "Minas",
+      "puntaje_final": 68.94,
+      "puntaje_clima": 65.37,
+      "puntaje_acceso": 85.99,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 19.57,
+        "apparent_temperature_min": 9.01,
+        "precipitation_sum": 6.42,
+        "precipitation_hours": 5.07
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 97.16,
+        "apparent_temperature_min": 75.11,
+        "precipitation_sum": 35.8,
+        "precipitation_hours": 57.78
+      },
+      "distancia_km": 119.99,
+      "duracion_viaje_minutos": 118.84,
+      "posicion_general": 91,
+      "posicion_en_finde": 12
+    },
+    {
+      "finde_id": "2026-06-19",
+      "inicio": "2026-06-19",
+      "fin": "2026-06-21",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Natalicio de Artigas y Día del Nunca Más"
+      ],
+      "destino_id": "punta_del_este",
+      "destino": "Punta del Este",
+      "puntaje_final": 68.72,
+      "puntaje_clima": 65.84,
+      "puntaje_acceso": 81.99,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 12.27,
+        "apparent_temperature_min": 5.04,
+        "precipitation_sum": 1.43,
+        "precipitation_hours": 1.67
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 48.44,
+        "apparent_temperature_min": 42.0,
+        "precipitation_sum": 85.7,
+        "precipitation_hours": 86.11
+      },
+      "distancia_km": 132.48,
+      "duracion_viaje_minutos": 135.64,
+      "posicion_general": 92,
+      "posicion_en_finde": 2
+    },
+    {
+      "finde_id": "2026-06-19",
+      "inicio": "2026-06-19",
+      "fin": "2026-06-21",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Natalicio de Artigas y Día del Nunca Más"
+      ],
+      "destino_id": "salto",
+      "destino": "Salto",
+      "puntaje_final": 68.47,
+      "puntaje_clima": 76.34,
+      "puntaje_acceso": 24.29,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 15.85,
+        "apparent_temperature_min": 5.53,
+        "precipitation_sum": 0.81,
+        "precipitation_hours": 1.4
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 72.33,
+        "apparent_temperature_min": 46.08,
+        "precipitation_sum": 91.93,
+        "precipitation_hours": 88.33
+      },
+      "distancia_km": 490.31,
+      "duracion_viaje_minutos": 377.97,
+      "posicion_general": 93,
+      "posicion_en_finde": 3
+    },
+    {
+      "finde_id": "2026-06-19",
+      "inicio": "2026-06-19",
+      "fin": "2026-06-21",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Natalicio de Artigas y Día del Nunca Más"
+      ],
+      "destino_id": "termas_del_dayman",
+      "destino": "Termas del Daymán",
+      "puntaje_final": 68.44,
+      "puntaje_clima": 75.89,
+      "puntaje_acceso": 26.5,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 15.86,
+        "apparent_temperature_min": 4.79,
+        "precipitation_sum": 0.59,
+        "precipitation_hours": 1.4
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 72.42,
+        "apparent_temperature_min": 39.92,
+        "precipitation_sum": 94.1,
+        "precipitation_hours": 88.33
+      },
+      "distancia_km": 481.05,
+      "duracion_viaje_minutos": 368.7,
+      "posicion_general": 94,
+      "posicion_en_finde": 4
+    },
+    {
+      "finde_id": "2026-10-10",
+      "inicio": "2026-10-10",
+      "fin": "2026-10-12",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Raza"
+      ],
+      "destino_id": "jose_ignacio",
+      "destino": "José Ignacio",
+      "puntaje_final": 68.43,
+      "puntaje_clima": 66.45,
+      "puntaje_acceso": 76.78,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 16.36,
+        "apparent_temperature_min": 9.43,
+        "precipitation_sum": 4.57,
+        "precipitation_hours": 4.8
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 75.71,
+        "apparent_temperature_min": 78.61,
+        "precipitation_sum": 54.33,
+        "precipitation_hours": 60.0
+      },
+      "distancia_km": 158.1,
+      "duracion_viaje_minutos": 157.53,
+      "posicion_general": 95,
+      "posicion_en_finde": 9
+    },
+    {
+      "finde_id": "2026-02-14",
+      "inicio": "2026-02-14",
+      "fin": "2026-02-17",
+      "cantidad_dias": 4,
+      "feriados": [
+        "Carnaval"
+      ],
+      "destino_id": "salto",
+      "destino": "Salto",
+      "puntaje_final": 67.94,
+      "puntaje_clima": 74.12,
+      "puntaje_acceso": 24.29,
+      "puntaje_duracion": 100.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 32.17,
+        "apparent_temperature_min": 21.16,
+        "precipitation_sum": 2.74,
+        "precipitation_hours": 2.83
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 65.25,
+        "apparent_temperature_min": 88.4,
+        "precipitation_sum": 72.58,
+        "precipitation_hours": 76.46
+      },
+      "distancia_km": 490.31,
+      "duracion_viaje_minutos": 377.97,
+      "posicion_general": 96,
+      "posicion_en_finde": 15
+    },
+    {
+      "finde_id": "2026-10-31",
+      "inicio": "2026-10-31",
+      "fin": "2026-11-02",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Difuntos"
+      ],
+      "destino_id": "tacuarembo",
+      "destino": "Tacuarembó",
+      "puntaje_final": 67.74,
+      "puntaje_clima": 72.42,
+      "puntaje_acceso": 40.37,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 23.16,
+        "apparent_temperature_min": 11.59,
+        "precipitation_sum": 6.33,
+        "precipitation_hours": 3.8
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 96.61,
+        "precipitation_sum": 36.7,
+        "precipitation_hours": 68.33
+      },
+      "distancia_km": 396.05,
+      "duracion_viaje_minutos": 310.43,
+      "posicion_general": 97,
+      "posicion_en_finde": 13
+    },
+    {
+      "finde_id": "2026-10-10",
+      "inicio": "2026-10-10",
+      "fin": "2026-10-12",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Raza"
+      ],
+      "destino_id": "aguas_dulces",
+      "destino": "Aguas Dulces",
+      "puntaje_final": 67.71,
+      "puntaje_clima": 69.16,
+      "puntaje_acceso": 57.58,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 16.82,
+        "apparent_temperature_min": 9.85,
+        "precipitation_sum": 3.85,
+        "precipitation_hours": 5.93
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 78.82,
+        "apparent_temperature_min": 82.08,
+        "precipitation_sum": 61.47,
+        "precipitation_hours": 50.56
+      },
+      "distancia_km": 265.07,
+      "duracion_viaje_minutos": 238.17,
+      "posicion_general": 98,
+      "posicion_en_finde": 10
+    },
+    {
+      "finde_id": "2026-05-01",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-03",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Trabajadores"
+      ],
+      "destino_id": "termas_del_dayman",
+      "destino": "Termas del Daymán",
+      "puntaje_final": 67.6,
+      "puntaje_clima": 74.84,
+      "puntaje_acceso": 26.5,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 21.24,
+        "apparent_temperature_min": 11.86,
+        "precipitation_sum": 6.07,
+        "precipitation_hours": 2.93
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 98.81,
+        "precipitation_sum": 39.27,
+        "precipitation_hours": 75.56
+      },
+      "distancia_km": 481.05,
+      "duracion_viaje_minutos": 368.7,
+      "posicion_general": 99,
+      "posicion_en_finde": 14
+    },
+    {
+      "finde_id": "2026-06-19",
+      "inicio": "2026-06-19",
+      "fin": "2026-06-21",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Natalicio de Artigas y Día del Nunca Más"
+      ],
+      "destino_id": "carmelo",
+      "destino": "Carmelo",
+      "puntaje_final": 67.45,
+      "puntaje_clima": 67.47,
+      "puntaje_acceso": 64.8,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 12.8,
+        "apparent_temperature_min": 4.08,
+        "precipitation_sum": 1.0,
+        "precipitation_hours": 1.13
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 51.98,
+        "apparent_temperature_min": 33.97,
+        "precipitation_sum": 90.0,
+        "precipitation_hours": 90.56
+      },
+      "distancia_km": 239.14,
+      "duracion_viaje_minutos": 207.85,
+      "posicion_general": 100,
+      "posicion_en_finde": 5
+    },
+    {
+      "finde_id": "2026-10-10",
+      "inicio": "2026-10-10",
+      "fin": "2026-10-12",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Raza"
+      ],
+      "destino_id": "cabo_polonio",
+      "destino": "Cabo Polonio",
+      "puntaje_final": 67.45,
+      "puntaje_clima": 69.32,
+      "puntaje_acceso": 54.95,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 16.77,
+        "apparent_temperature_min": 9.77,
+        "precipitation_sum": 3.77,
+        "precipitation_hours": 5.83
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 78.47,
+        "apparent_temperature_min": 81.39,
+        "precipitation_sum": 62.27,
+        "precipitation_hours": 51.39
+      },
+      "distancia_km": 273.98,
+      "duracion_viaje_minutos": 249.22,
+      "posicion_general": 101,
+      "posicion_en_finde": 11
+    },
+    {
+      "finde_id": "2026-10-31",
+      "inicio": "2026-10-31",
+      "fin": "2026-11-02",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Difuntos"
+      ],
+      "destino_id": "termas_del_dayman",
+      "destino": "Termas del Daymán",
+      "puntaje_final": 67.33,
+      "puntaje_clima": 74.51,
+      "puntaje_acceso": 26.5,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 24.9,
+        "apparent_temperature_min": 13.13,
+        "precipitation_sum": 5.95,
+        "precipitation_hours": 3.73
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 40.5,
+        "precipitation_hours": 68.89
+      },
+      "distancia_km": 481.05,
+      "duracion_viaje_minutos": 368.7,
+      "posicion_general": 102,
+      "posicion_en_finde": 14
+    },
+    {
+      "finde_id": "2026-10-10",
+      "inicio": "2026-10-10",
+      "fin": "2026-10-12",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Raza"
+      ],
+      "destino_id": "villa_serrana",
+      "destino": "Villa Serrana",
+      "puntaje_final": 67.1,
+      "puntaje_clima": 64.27,
+      "puntaje_acceso": 79.6,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 16.75,
+        "apparent_temperature_min": 7.34,
+        "precipitation_sum": 3.99,
+        "precipitation_hours": 6.0
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 78.31,
+        "apparent_temperature_min": 61.14,
+        "precipitation_sum": 60.13,
+        "precipitation_hours": 50.0
+      },
+      "distancia_km": 150.6,
+      "duracion_viaje_minutos": 145.7,
+      "posicion_general": 103,
+      "posicion_en_finde": 12
+    },
+    {
+      "finde_id": "2026-06-19",
+      "inicio": "2026-06-19",
+      "fin": "2026-06-21",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Natalicio de Artigas y Día del Nunca Más"
+      ],
+      "destino_id": "jose_ignacio",
+      "destino": "José Ignacio",
+      "puntaje_final": 67.05,
+      "puntaje_clima": 64.72,
+      "puntaje_acceso": 76.78,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 12.33,
+        "apparent_temperature_min": 5.18,
+        "precipitation_sum": 1.68,
+        "precipitation_hours": 2.17
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 48.89,
+        "apparent_temperature_min": 43.17,
+        "precipitation_sum": 83.23,
+        "precipitation_hours": 81.94
+      },
+      "distancia_km": 158.1,
+      "duracion_viaje_minutos": 157.53,
+      "posicion_general": 104,
+      "posicion_en_finde": 6
+    },
+    {
+      "finde_id": "2026-10-10",
+      "inicio": "2026-10-10",
+      "fin": "2026-10-12",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Raza"
+      ],
+      "destino_id": "tacuarembo",
+      "destino": "Tacuarembó",
+      "puntaje_final": 66.87,
+      "puntaje_clima": 71.33,
+      "puntaje_acceso": 40.37,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 20.91,
+        "apparent_temperature_min": 9.52,
+        "precipitation_sum": 5.38,
+        "precipitation_hours": 4.57
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 79.36,
+        "precipitation_sum": 46.2,
+        "precipitation_hours": 61.94
+      },
+      "distancia_km": 396.05,
+      "duracion_viaje_minutos": 310.43,
+      "posicion_general": 105,
+      "posicion_en_finde": 13
+    },
+    {
+      "finde_id": "2026-05-01",
+      "inicio": "2026-05-01",
+      "fin": "2026-05-03",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Trabajadores"
+      ],
+      "destino_id": "salto",
+      "destino": "Salto",
+      "puntaje_final": 66.52,
+      "puntaje_clima": 73.91,
+      "puntaje_acceso": 24.29,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 21.24,
+        "apparent_temperature_min": 12.37,
+        "precipitation_sum": 6.36,
+        "precipitation_hours": 3.07
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 36.4,
+        "precipitation_hours": 74.44
+      },
+      "distancia_km": 490.31,
+      "duracion_viaje_minutos": 377.97,
+      "posicion_general": 106,
+      "posicion_en_finde": 15
+    },
+    {
+      "finde_id": "2026-10-10",
+      "inicio": "2026-10-10",
+      "fin": "2026-10-12",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Raza"
+      ],
+      "destino_id": "la_paloma",
+      "destino": "La Paloma",
+      "puntaje_final": 66.5,
+      "puntaje_clima": 66.32,
+      "puntaje_acceso": 64.61,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 16.4,
+        "apparent_temperature_min": 9.6,
+        "precipitation_sum": 4.36,
+        "precipitation_hours": 5.77
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 76.0,
+        "apparent_temperature_min": 80.0,
+        "precipitation_sum": 56.37,
+        "precipitation_hours": 51.94
+      },
+      "distancia_km": 224.68,
+      "duracion_viaje_minutos": 208.65,
+      "posicion_general": 107,
+      "posicion_en_finde": 14
+    },
+    {
+      "finde_id": "2026-06-19",
+      "inicio": "2026-06-19",
+      "fin": "2026-06-21",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Natalicio de Artigas y Día del Nunca Más"
+      ],
+      "destino_id": "colonia_del_sacramento",
+      "destino": "Colonia del Sacramento",
+      "puntaje_final": 66.39,
+      "puntaje_clima": 63.32,
+      "puntaje_acceso": 79.9,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 12.35,
+        "apparent_temperature_min": 4.72,
+        "precipitation_sum": 2.25,
+        "precipitation_hours": 1.1
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 49.02,
+        "apparent_temperature_min": 39.36,
+        "precipitation_sum": 77.47,
+        "precipitation_hours": 90.83
+      },
+      "distancia_km": 179.85,
+      "duracion_viaje_minutos": 144.41,
+      "posicion_general": 108,
+      "posicion_en_finde": 7
+    },
+    {
+      "finde_id": "2026-06-19",
+      "inicio": "2026-06-19",
+      "fin": "2026-06-21",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Natalicio de Artigas y Día del Nunca Más"
+      ],
+      "destino_id": "mercedes",
+      "destino": "Mercedes",
+      "puntaje_final": 66.3,
+      "puntaje_clima": 66.83,
+      "puntaje_acceso": 60.54,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 13.69,
+        "apparent_temperature_min": 3.66,
+        "precipitation_sum": 1.49,
+        "precipitation_hours": 1.13
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 57.91,
+        "apparent_temperature_min": 30.5,
+        "precipitation_sum": 85.07,
+        "precipitation_hours": 90.56
+      },
+      "distancia_km": 282.83,
+      "duracion_viaje_minutos": 225.72,
+      "posicion_general": 109,
+      "posicion_en_finde": 8
+    },
+    {
+      "finde_id": "2026-12-25",
+      "inicio": "2026-12-25",
+      "fin": "2026-12-27",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Familia"
+      ],
+      "destino_id": "termas_del_dayman",
+      "destino": "Termas del Daymán",
+      "puntaje_final": 66.05,
+      "puntaje_clima": 72.91,
+      "puntaje_acceso": 26.5,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 33.24,
+        "apparent_temperature_min": 20.29,
+        "precipitation_sum": 3.19,
+        "precipitation_hours": 1.8
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 56.36,
+        "apparent_temperature_min": 97.13,
+        "precipitation_sum": 68.07,
+        "precipitation_hours": 85.0
+      },
+      "distancia_km": 481.05,
+      "duracion_viaje_minutos": 368.7,
+      "posicion_general": 110,
+      "posicion_en_finde": 14
+    },
+    {
+      "finde_id": "2026-06-19",
+      "inicio": "2026-06-19",
+      "fin": "2026-06-21",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Natalicio de Artigas y Día del Nunca Más"
+      ],
+      "destino_id": "tacuarembo",
+      "destino": "Tacuarembó",
+      "puntaje_final": 65.88,
+      "puntaje_clima": 70.1,
+      "puntaje_acceso": 40.37,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 15.33,
+        "apparent_temperature_min": 3.84,
+        "precipitation_sum": 1.28,
+        "precipitation_hours": 2.0
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 68.89,
+        "apparent_temperature_min": 32.0,
+        "precipitation_sum": 87.23,
+        "precipitation_hours": 83.33
+      },
+      "distancia_km": 396.05,
+      "duracion_viaje_minutos": 310.43,
+      "posicion_general": 111,
+      "posicion_en_finde": 9
+    },
+    {
+      "finde_id": "2026-10-31",
+      "inicio": "2026-10-31",
+      "fin": "2026-11-02",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de los Difuntos"
+      ],
+      "destino_id": "salto",
+      "destino": "Salto",
+      "puntaje_final": 65.57,
+      "puntaje_clima": 72.72,
+      "puntaje_acceso": 24.29,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 24.86,
+        "apparent_temperature_min": 13.57,
+        "precipitation_sum": 6.38,
+        "precipitation_hours": 3.97
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 100.0,
+        "apparent_temperature_min": 100.0,
+        "precipitation_sum": 36.23,
+        "precipitation_hours": 66.94
+      },
+      "distancia_km": 490.31,
+      "duracion_viaje_minutos": 377.97,
+      "posicion_general": 112,
+      "posicion_en_finde": 15
+    },
+    {
+      "finde_id": "2026-06-19",
+      "inicio": "2026-06-19",
+      "fin": "2026-06-21",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Natalicio de Artigas y Día del Nunca Más"
+      ],
+      "destino_id": "la_paloma",
+      "destino": "La Paloma",
+      "puntaje_final": 65.45,
+      "puntaje_clima": 65.01,
+      "puntaje_acceso": 64.61,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 12.48,
+        "apparent_temperature_min": 5.8,
+        "precipitation_sum": 1.99,
+        "precipitation_hours": 2.1
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 49.84,
+        "apparent_temperature_min": 48.31,
+        "precipitation_sum": 80.07,
+        "precipitation_hours": 82.5
+      },
+      "distancia_km": 224.68,
+      "duracion_viaje_minutos": 208.65,
+      "posicion_general": 113,
+      "posicion_en_finde": 10
+    },
+    {
+      "finde_id": "2026-10-10",
+      "inicio": "2026-10-10",
+      "fin": "2026-10-12",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Raza"
+      ],
+      "destino_id": "punta_del_diablo",
+      "destino": "Punta del Diablo",
+      "puntaje_final": 65.27,
+      "puntaje_clima": 67.01,
+      "puntaje_acceso": 52.76,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 16.82,
+        "apparent_temperature_min": 10.21,
+        "precipitation_sum": 4.81,
+        "precipitation_hours": 5.43
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 78.8,
+        "apparent_temperature_min": 85.06,
+        "precipitation_sum": 51.87,
+        "precipitation_hours": 54.72
+      },
+      "distancia_km": 291.87,
+      "duracion_viaje_minutos": 258.41,
+      "posicion_general": 114,
+      "posicion_en_finde": 15
+    },
+    {
+      "finde_id": "2026-12-25",
+      "inicio": "2026-12-25",
+      "fin": "2026-12-27",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Día de la Familia"
+      ],
+      "destino_id": "salto",
+      "destino": "Salto",
+      "puntaje_final": 65.25,
+      "puntaje_clima": 72.33,
+      "puntaje_acceso": 24.29,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 33.28,
+        "apparent_temperature_min": 20.77,
+        "precipitation_sum": 3.03,
+        "precipitation_hours": 1.87
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 56.03,
+        "apparent_temperature_min": 92.33,
+        "precipitation_sum": 69.67,
+        "precipitation_hours": 84.44
+      },
+      "distancia_km": 490.31,
+      "duracion_viaje_minutos": 377.97,
+      "posicion_general": 115,
+      "posicion_en_finde": 15
+    },
+    {
+      "finde_id": "2026-06-19",
+      "inicio": "2026-06-19",
+      "fin": "2026-06-21",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Natalicio de Artigas y Día del Nunca Más"
+      ],
+      "destino_id": "aguas_dulces",
+      "destino": "Aguas Dulces",
+      "puntaje_final": 65.06,
+      "puntaje_clima": 65.85,
+      "puntaje_acceso": 57.58,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 12.67,
+        "apparent_temperature_min": 6.11,
+        "precipitation_sum": 1.92,
+        "precipitation_hours": 2.37
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 51.16,
+        "apparent_temperature_min": 50.94,
+        "precipitation_sum": 80.77,
+        "precipitation_hours": 80.28
+      },
+      "distancia_km": 265.07,
+      "duracion_viaje_minutos": 238.17,
+      "posicion_general": 116,
+      "posicion_en_finde": 11
+    },
+    {
+      "finde_id": "2026-06-19",
+      "inicio": "2026-06-19",
+      "fin": "2026-06-21",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Natalicio de Artigas y Día del Nunca Más"
+      ],
+      "destino_id": "minas",
+      "destino": "Minas",
+      "puntaje_final": 64.58,
+      "puntaje_clima": 59.92,
+      "puntaje_acceso": 85.99,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 11.86,
+        "apparent_temperature_min": 2.27,
+        "precipitation_sum": 1.67,
+        "precipitation_hours": 1.4
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 45.71,
+        "apparent_temperature_min": 18.94,
+        "precipitation_sum": 83.33,
+        "precipitation_hours": 88.33
+      },
+      "distancia_km": 119.99,
+      "duracion_viaje_minutos": 118.84,
+      "posicion_general": 117,
+      "posicion_en_finde": 12
+    },
+    {
+      "finde_id": "2026-06-19",
+      "inicio": "2026-06-19",
+      "fin": "2026-06-21",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Natalicio de Artigas y Día del Nunca Más"
+      ],
+      "destino_id": "cabo_polonio",
+      "destino": "Cabo Polonio",
+      "puntaje_final": 64.46,
+      "puntaje_clima": 65.58,
+      "puntaje_acceso": 54.95,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 12.65,
+        "apparent_temperature_min": 5.99,
+        "precipitation_sum": 1.92,
+        "precipitation_hours": 2.37
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 50.98,
+        "apparent_temperature_min": 49.89,
+        "precipitation_sum": 80.77,
+        "precipitation_hours": 80.28
+      },
+      "distancia_km": 273.98,
+      "duracion_viaje_minutos": 249.22,
+      "posicion_general": 118,
+      "posicion_en_finde": 13
+    },
+    {
+      "finde_id": "2026-06-19",
+      "inicio": "2026-06-19",
+      "fin": "2026-06-21",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Natalicio de Artigas y Día del Nunca Más"
+      ],
+      "destino_id": "punta_del_diablo",
+      "destino": "Punta del Diablo",
+      "puntaje_final": 62.44,
+      "puntaje_clima": 63.47,
+      "puntaje_acceso": 52.76,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 12.96,
+        "apparent_temperature_min": 6.14,
+        "precipitation_sum": 2.7,
+        "precipitation_hours": 2.6
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 53.09,
+        "apparent_temperature_min": 51.14,
+        "precipitation_sum": 73.03,
+        "precipitation_hours": 78.33
+      },
+      "distancia_km": 291.87,
+      "duracion_viaje_minutos": 258.41,
+      "posicion_general": 119,
+      "posicion_en_finde": 14
+    },
+    {
+      "finde_id": "2026-06-19",
+      "inicio": "2026-06-19",
+      "fin": "2026-06-21",
+      "cantidad_dias": 3,
+      "feriados": [
+        "Natalicio de Artigas y Día del Nunca Más"
+      ],
+      "destino_id": "villa_serrana",
+      "destino": "Villa Serrana",
+      "puntaje_final": 60.84,
+      "puntaje_clima": 56.44,
+      "puntaje_acceso": 79.6,
+      "puntaje_duracion": 75.0,
+      "promedios_climaticos": {
+        "apparent_temperature_max": 11.44,
+        "apparent_temperature_min": 2.2,
+        "precipitation_sum": 2.21,
+        "precipitation_hours": 1.9
+      },
+      "componentes_climaticos": {
+        "apparent_temperature_max": 42.91,
+        "apparent_temperature_min": 18.33,
+        "precipitation_sum": 77.93,
+        "precipitation_hours": 84.17
+      },
+      "distancia_km": 150.6,
+      "duracion_viaje_minutos": 145.7,
+      "posicion_general": 120,
+      "posicion_en_finde": 15
+    }
+  ]
+}

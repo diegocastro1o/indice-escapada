@@ -1,0 +1,94 @@
+{
+  "colonia_del_sacramento": {
+    "destino_id": "colonia_del_sacramento",
+    "distancia_km": 179.85,
+    "duracion_minutos": 144.41,
+    "fuente": "OpenRouteService"
+  },
+  "carmelo": {
+    "destino_id": "carmelo",
+    "distancia_km": 239.14,
+    "duracion_minutos": 207.85,
+    "fuente": "OpenRouteService"
+  },
+  "piriapolis": {
+    "destino_id": "piriapolis",
+    "distancia_km": 99.02,
+    "duracion_minutos": 109.08,
+    "fuente": "OpenRouteService"
+  },
+  "punta_del_este": {
+    "destino_id": "punta_del_este",
+    "distancia_km": 132.48,
+    "duracion_minutos": 135.64,
+    "fuente": "OpenRouteService"
+  },
+  "jose_ignacio": {
+    "destino_id": "jose_ignacio",
+    "distancia_km": 158.1,
+    "duracion_minutos": 157.53,
+    "fuente": "OpenRouteService"
+  },
+  "la_paloma": {
+    "destino_id": "la_paloma",
+    "distancia_km": 224.68,
+    "duracion_minutos": 208.65,
+    "fuente": "OpenRouteService"
+  },
+  "punta_del_diablo": {
+    "destino_id": "punta_del_diablo",
+    "distancia_km": 291.87,
+    "duracion_minutos": 258.41,
+    "fuente": "OpenRouteService"
+  },
+  "aguas_dulces": {
+    "destino_id": "aguas_dulces",
+    "distancia_km": 265.07,
+    "duracion_minutos": 238.17,
+    "fuente": "OpenRouteService"
+  },
+  "minas": {
+    "destino_id": "minas",
+    "distancia_km": 119.99,
+    "duracion_minutos": 118.84,
+    "fuente": "OpenRouteService"
+  },
+  "villa_serrana": {
+    "destino_id": "villa_serrana",
+    "distancia_km": 150.6,
+    "duracion_minutos": 145.7,
+    "fuente": "OpenRouteService"
+  },
+  "termas_del_dayman": {
+    "destino_id": "termas_del_dayman",
+    "distancia_km": 481.05,
+    "duracion_minutos": 368.7,
+    "fuente": "OpenRouteService"
+  },
+  "salto": {
+    "destino_id": "salto",
+    "distancia_km": 490.31,
+    "duracion_minutos": 377.97,
+    "fuente": "OpenRouteService"
+  },
+  "mercedes": {
+    "destino_id": "mercedes",
+    "distancia_km": 282.83,
+    "duracion_minutos": 225.72,
+    "fuente": "OpenRouteService"
+  },
+  "tacuarembo": {
+    "destino_id": "tacuarembo",
+    "distancia_km": 396.05,
+    "duracion_minutos": 310.43,
+    "fuente": "OpenRouteService"
+  },
+  "cabo_polonio": {
+    "destino_id": "cabo_polonio",
+    "distancia_km": 273.98,
+    "duracion_minutos": 249.22,
+    "fuente": "OpenRouteService",
+    "punto_ruta": "Barra de Valizas (acceso vehicular a Cabo Polonio)",
+    "usa_punto_ruta_alternativo": true
+  }
+}

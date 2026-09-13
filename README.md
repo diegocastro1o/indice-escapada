@@ -6,15 +6,16 @@ El programa obtiene datos de cuatro servicios, los guarda en caché y construye 
 
 ## Estado actual
 
-La estructura y los módulos del pipeline ya están implementados. Actualmente hay:
+El pipeline se ejecutó de punta a punta para 2026. Actualmente hay:
 
 - 15 destinos configurados y sus coordenadas cacheadas, además de Montevideo.
-- Una muestra climática de 3 destinos × 3 años (2015–2017), con 3.288 registros diarios.
+- 150 archivos climáticos: 15 destinos × 10 años (2015–2024), con 54.795 registros diarios.
 - Recolección climática síncrona y asíncrona, con un máximo de 5 solicitudes simultáneas.
-- Feriados de Uruguay de 2026 cacheados y detección de fines de semana largos.
-- Recolección de rutas y cálculo del ranking implementados.
+- 15 rutas cacheadas desde Montevideo, incluido el acceso vehicular alternativo de Cabo Polonio.
+- Feriados de Uruguay de 2026 cacheados, 8 fines de semana largos y un ranking de 120 combinaciones.
+- Un ranking procesado en `data/processed/ranking_2026.json`.
 
-Para completar una ejecución final todavía se necesita configurar `ORS_API_KEY`, descargar las rutas y recolectar el histórico completo de clima: 15 destinos × 10 años, 54.795 registros diarios. Después de eso se podrá generar el ranking final.
+La recomendación principal generada es **Piriápolis, del 2 al 5 de abril de 2026**, con 87,35 puntos. La segunda ejecución completa reutilizó la caché y tardó 0,17 segundos en este equipo.
 
 ## Fuentes de datos
 
@@ -95,6 +96,8 @@ uv run python src/main.py pipeline --year 2026 --top 10
 
 La primera ejecución puede tardar porque descarga los datos faltantes. Las ejecuciones posteriores reutilizan la caché; para la entrega se debe comprobar que la segunda ejecución completa tarde menos de 5 segundos.
 
+Con los datos que ya se encuentran versionados, la verificación completa para 2026 tardó 0,17 segundos en este equipo.
+
 También se puede ejecutar como módulo:
 
 ```bash
@@ -155,6 +158,8 @@ uv run python src/main.py rutas
 ```
 
 Requiere `ORS_API_KEY`. Calcula distancia y duración en auto desde Montevideo a cada destino y guarda el resultado en `data/raw/routes.json`.
+
+Como Cabo Polonio no tiene una conexión apta para autos en la red de OpenRouteService, su ruta se mide hasta Barra de Valizas, el acceso vehicular definido en `config/ubicaciones.json`. El clima sigue correspondiendo a Cabo Polonio; el JSON de rutas deja registrada esta excepción.
 
 ### 5. Construir el ranking
 
@@ -251,11 +256,10 @@ uv run python src/main.py --help
 
 Antes de entregar también conviene comprobar:
 
-- que existan 150 archivos de clima;
-- que el total supere 5.000 registros diarios;
-- que `routes.json` contenga 15 rutas;
-- que una segunda ejecución use caché y tarde menos de 5 segundos;
-- que `ranking_<año>.json` se genere sin errores;
+- que existan los 150 archivos de clima y 54.795 registros diarios;
+- que `routes.json` contenga las 15 rutas;
+- que una segunda ejecución use caché y tarde menos de 5 segundos (verificado: 0,17 s);
+- que `ranking_2026.json` se genere sin errores (verificado: 120 combinaciones);
 - que `BITACORA.md` e `INDICE.md` reflejen las decisiones finales.
 
 ## Problemas frecuentes

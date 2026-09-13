@@ -38,7 +38,12 @@
     {
       "id": "cabo_polonio",
       "nombre": "Cabo Polonio",
-      "consulta_nominatim": "Cabo Polonio, Rocha, Uruguay"
+      "consulta_nominatim": "Cabo Polonio, Rocha, Uruguay",
+      "punto_ruta": {
+        "nombre": "Barra de Valizas (acceso vehicular a Cabo Polonio)",
+        "latitud": -34.3369825,
+        "longitud": -53.7928131
+      }
     },
     {
       "id": "punta_del_diablo",

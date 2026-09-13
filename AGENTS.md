@@ -34,6 +34,7 @@ No cambiar estas decisiones sin verificar primero la consigna original y acordar
 - Los fines de semana largos son bloques de al menos 3 días no laborables consecutivos que incluyen algún feriado.
 - Los promedios históricos se calculan usando el mismo mes y día del fin de semana objetivo a lo largo de los diez años.
 - Los archivos JSON se escriben de forma atómica mediante un temporal y reemplazo.
+- Cabo Polonio conserva sus coordenadas para clima, pero su acceso vial se mide hasta Barra de Valizas; ese punto está declarado como `punto_ruta` en la configuración porque el destino no es enrutable en auto por OpenRouteService.
 
 ### Fórmula vigente
 
@@ -91,24 +92,22 @@ weather + routes + holidays ────────────> src/index.py
 - Recolector climático asíncrono con sesión compartida de `aiohttp`, semáforo de 5, reintentos y progreso por tarea completada.
 - Validación de 365/366 días y de las cuatro variables requeridas.
 - Recuperación automática ante cachés climáticas o de feriados inválidas.
-- Muestra climática de Colonia del Sacramento, Carmelo y Piriápolis para 2015, 2016 y 2017: 9 archivos y 3.288 registros diarios.
+- Histórico climático completo: 15 destinos × 10 años (2015–2024), 150 archivos y 54.795 registros diarios.
 - Feriados de Uruguay de 2026 cacheados: 15 entradas; el código detecta 8 bloques largos con los datos actuales de Nager.Date.
-- Cliente de OpenRouteService y caché incremental de rutas.
-- Cálculo del ranking, ranking por fin de semana y generación de conclusiones.
+- Cliente de OpenRouteService y 15 rutas cacheadas. Cabo Polonio usa Barra de Valizas como acceso vehicular alternativo, y la caché lo registra explícitamente.
+- Ranking de 2026 generado: 120 combinaciones. La primera es Piriápolis, 2026-04-02 a 2026-04-05, con 87,35 puntos.
+- La conclusión comparativa detectada es que Termas del Daymán baja 13 puestos en el finde del 2026-05-16 al incorporar el tiempo de viaje.
+- Pipeline completo con caché verificado en 0,17 segundos en este equipo.
 - Dependencias declaradas y bloqueadas con `uv`.
 
-### Pendiente para una corrida final real
+### Pendiente de documentación y calidad
 
-1. Conseguir y configurar `ORS_API_KEY` en `.env`.
-2. Ejecutar `uv run python src/main.py rutas` y verificar 15 rutas.
-3. Ejecutar el clima completo para generar 150 archivos de 2015–2024.
-4. Ejecutar el ranking para el año objetivo y revisar el JSON procesado.
-5. Contrastar manualmente resultados extremos o inesperados.
-6. Actualizar `INDICE.md` para explicar también los pesos finales 80/15/5 y las funciones que convierten cada variable a 0–100.
-7. Completar `BITACORA.md` con tiempos síncrono/asíncrono, decisiones, problemas y evidencia de la segunda ejecución con caché.
-8. Crear pruebas automatizadas; `tests/` todavía está vacío.
+1. Contrastar manualmente resultados extremos o inesperados del ranking.
+2. Actualizar `INDICE.md` para explicar también los pesos finales 80/15/5 y las funciones que convierten cada variable a 0–100.
+3. Completar `BITACORA.md` con tiempos síncrono/asíncrono, decisiones, problemas y evidencia de la segunda ejecución con caché.
+4. Crear pruebas automatizadas; `tests/` todavía está vacío.
 
-No afirmar que el proyecto está terminado mientras falten las rutas reales, los 150 archivos climáticos o el ranking final.
+El pipeline de datos está completo. No dar por cerrada la entrega académica hasta terminar la documentación y las pruebas pendientes.
 
 ## Comandos canónicos
 

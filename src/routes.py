@@ -47,6 +47,32 @@ def validar_ruta(ruta: object, destino_id: str) -> dict:
     return ruta
 
 
+def resolver_punto_ruta(destino_config: dict, geocoding: dict) -> tuple[dict, bool]:
+    punto_ruta = destino_config.get("punto_ruta")
+    if punto_ruta is not None:
+        latitud = punto_ruta.get("latitud") if isinstance(punto_ruta, dict) else None
+        longitud = punto_ruta.get("longitud") if isinstance(punto_ruta, dict) else None
+        nombre = punto_ruta.get("nombre") if isinstance(punto_ruta, dict) else None
+        if not isinstance(latitud, (int, float)) or not isinstance(longitud, (int, float)):
+            raise ValueError(
+                f"El punto de ruta de '{destino_config['id']}' no tiene coordenadas válidas."
+            )
+        if not isinstance(nombre, str) or not nombre:
+            raise ValueError(
+                f"El punto de ruta de '{destino_config['id']}' no tiene un nombre válido."
+            )
+        return {
+            "nombre": nombre,
+            "latitud": latitud,
+            "longitud": longitud,
+        }, True
+
+    destino_id = destino_config["id"]
+    if destino_id not in geocoding:
+        raise ValueError(f"No hay coordenadas para {destino_id}.")
+    return geocoding[destino_id], False
+
+
 def descargar_ruta(
     origen: dict,
     destino: dict,
@@ -86,6 +112,12 @@ def descargar_ruta(
                 },
                 destino_id,
             )
+        except requests.HTTPError as error:
+            estado = error.response.status_code if error.response is not None else None
+            estados_reintentables = {408, 429, 500, 502, 503, 504}
+            if estado not in estados_reintentables or intento == MAX_RETRIES:
+                raise
+            time.sleep(RETRY_DELAY_SECONDS * (intento + 1))
         except (KeyError, IndexError, TypeError) as error:
             raise ValueError(
                 f"OpenRouteService devolvió una respuesta inesperada para '{destino_id}'."
@@ -126,9 +158,14 @@ def obtener_rutas(
 
     for destino_config in configuracion["destinos"]:
         destino_id = destino_config["id"]
-        if destino_id not in geocoding:
+        try:
+            destino_ruta, usa_punto_ruta = resolver_punto_ruta(
+                destino_config,
+                geocoding,
+            )
+        except ValueError as error:
             errores.append(destino_id)
-            print(f"[error] No hay coordenadas para {destino_id}.")
+            print(f"[error] {error}")
             continue
 
         if not force and destino_id in cache:
@@ -140,13 +177,17 @@ def obtener_rutas(
                 print(f"[cache inválida] Ruta a {destino_config['nombre']}.")
 
         print(f"[OpenRouteService] Calculando ruta a {destino_config['nombre']}...")
+        if usa_punto_ruta:
+            print(f"[acceso] Usando {destino_ruta['nombre']}.")
         try:
             cache[destino_id] = descargar_ruta(
                 origen,
-                geocoding[destino_id],
+                destino_ruta,
                 destino_id,
                 api_key,
             )
+            cache[destino_id]["punto_ruta"] = destino_ruta["nombre"]
+            cache[destino_id]["usa_punto_ruta_alternativo"] = usa_punto_ruta
         except (ValueError, requests.RequestException) as error:
             errores.append(destino_id)
             print(f"[error] {destino_config['nombre']}: {error}")
