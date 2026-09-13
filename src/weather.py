@@ -11,20 +11,28 @@ import aiohttp
 
 OPEN_METEO_ARCHIVE_URL = "https://archive-api.open-meteo.com/v1/archive"
 DAILY_VARIABLES = [
-    "temperature_2m_max",
-    "temperature_2m_min",
+    "apparent_temperature_max",
+    "apparent_temperature_min",
     "precipitation_sum",
-    "wind_speed_10m_max",
+    "precipitation_hours",
 ]
 MAX_RETRIES = 2
 RETRY_DELAY_SECONDS = 5
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
 MUESTRA_DESTINOS = [
     "colonia_del_sacramento",
     "carmelo",
     "piriapolis",
 ]
 MUESTRA_ANIOS = [2015, 2016, 2017]
+
+
+def cargar_ids_destinos(config_path: Path) -> list[str]:
+    with config_path.open(encoding="utf-8") as archivo:
+        configuracion = json.load(archivo)
+
+    return [destino["id"] for destino in configuracion["destinos"]]
 
 
 def cargar_ubicacion(destino_id: str, geocoding_path: Path) -> dict:
@@ -44,11 +52,32 @@ def ruta_cache(destino_id: str, anio: int, weather_dir: Path) -> Path:
     return weather_dir / destino_id / f"{anio}.json"
 
 
-def cargar_cache(cache_path: Path) -> dict | None:
+def cargar_cache(
+    destino_id: str,
+    anio: int,
+    cache_path: Path,
+    force: bool,
+) -> dict | None:
+    if force:
+        return None
+
     if not cache_path.exists():
         return None
-    with cache_path.open(encoding="utf-8") as archivo:
-        return json.load(archivo)
+
+    try:
+        with cache_path.open(encoding="utf-8") as archivo:
+            datos = json.load(archivo)
+            cantidad_esperada = validar_datos_diarios(datos, anio)
+            print(f"[cache] {destino_id} {anio}: {cantidad_esperada} días")
+            return datos
+
+    except json.JSONDecodeError as ERROR:
+        print(f"[cache inválida] {destino_id} {anio}: se descargará nuevamente.")
+        return None
+
+    except ValueError as ERROR:
+        print(f"[cache inválida] {destino_id} {anio}: se descargará nuevamente.")
+        return None
 
 
 def guardar_cache(datos: dict, cache_path: Path) -> None:
@@ -98,6 +127,9 @@ def descargar_clima(ubicacion: dict, anio: int) -> dict:
 
 
 def validar_datos_diarios(datos: dict, anio: int) -> int:
+    if not isinstance(datos, dict):
+        raise ValueError("La caché no contiene un objeto JSON válido.")
+
     diarios = datos.get("daily")
     if not isinstance(diarios, dict):
         raise ValueError("La respuesta de Open-Meteo no contiene datos diarios.")
@@ -122,10 +154,8 @@ def obtener_clima(
     force: bool = False,
 ) -> dict:
     cache_path = ruta_cache(destino_id, anio, weather_dir)
-    cache = cargar_cache(cache_path)
-    if cache is not None and not force:
-        cantidad_dias = validar_datos_diarios(cache, anio)
-        print(f"[cache] {destino_id} {anio}: {cantidad_dias} días")
+    cache = cargar_cache(destino_id, anio, cache_path, force)
+    if cache is not None:
         return cache
 
     ubicacion = cargar_ubicacion(destino_id, geocoding_path)
@@ -222,7 +252,7 @@ async def descargar_clima_async(
             )
             await asyncio.sleep(espera)
 
-    raise RuntimeError()
+    raise RuntimeError("No se pudo descargar el clima en modo asíncrono.")
 
 
 async def obtener_clima_async(
@@ -235,10 +265,9 @@ async def obtener_clima_async(
     force: bool = False
 ) -> dict:
     cache_path = ruta_cache(destino_id, anio, weather_dir)
-    cache = cargar_cache(cache_path)
-    if cache is not None and not force:
-        cantidad_dias = validar_datos_diarios(cache, anio)
-        print(f"[cache] {destino_id} {anio}: {cantidad_dias} días")
+    cache = cargar_cache(destino_id, anio, cache_path, force)
+
+    if cache is not None:
         return cache
 
     ubicacion = cargar_ubicacion(destino_id, geocoding_path)
@@ -258,10 +287,12 @@ async def recolectar_async(
     geocoding_path: Path,
     weather_dir: Path,
     force: bool = False,
-):
+) -> None:
     tareas_info = [(destino_id, anio) for destino_id in destinos for anio in anios]
     semaforo = asyncio.Semaphore(5)
     inicio = time.perf_counter()
+    total_registros = 0
+    errores = []
 
     print(
         f"[inicio] Recolectando {len(tareas_info)} tareas "
@@ -270,29 +301,33 @@ async def recolectar_async(
 
     timeout = aiohttp.ClientTimeout(total=30)
     async with aiohttp.ClientSession(timeout=timeout) as sesion:
+        async def ejecutar_tarea(destino_id: str, anio: int) -> tuple:
+            try:
+                resultado = await obtener_clima_async(
+                    sesion,
+                    semaforo,
+                    destino_id,
+                    anio,
+                    geocoding_path,
+                    weather_dir,
+                    force,
+                )
+                return destino_id, anio, resultado, None
+            except Exception as error:
+                return destino_id, anio, None, error
+
         tareas = [
-            obtener_clima_async(
-                sesion,
-                semaforo,
-                destino_id,
-                anio,
-                geocoding_path,
-                weather_dir,
-                force
-            )
+            asyncio.create_task(ejecutar_tarea(destino_id, anio))
             for destino_id, anio in tareas_info
         ]
 
-        resultados = await asyncio.gather(*tareas, return_exceptions=True)
-
-    total_registros = 0
-    errores = []
-
-    for (destino_id, anio), resultado in zip(tareas_info, resultados):
-        if isinstance(resultado, Exception):
-            errores.append((destino_id, anio, resultado))
-        else:
-            total_registros += len(resultado["daily"]["time"])
+        for posicion, tarea in enumerate(asyncio.as_completed(tareas), start=1):
+            destino_id, anio, resultado, error = await tarea
+            if error is not None:
+                errores.append((destino_id, anio, error))
+            else:
+                total_registros += len(resultado["daily"]["time"])
+            print(f"[progreso] {posicion}/{len(tareas_info)} completadas")
 
     if errores:
         for destino_id, anio, ERROR in errores:
@@ -323,6 +358,12 @@ if __name__ == "__main__":
         help="Modo de recolección: sync o async.",
     )
     parser.add_argument(
+        "--scope",
+        choices=["sample", "full"],
+        default="sample",
+        help="Alcance de ejecución: sample o full.",
+    )
+    parser.add_argument(
         "--force",
         action="store_true",
         help="Vuelve a descargar incluso los archivos que ya están en caché.",
@@ -332,10 +373,17 @@ if __name__ == "__main__":
     weather_dir = PROJECT_ROOT / "data/raw/weather"
 
     try:
+        if argumentos.scope == "full":
+            destinos = cargar_ids_destinos(PROJECT_ROOT / "config/ubicaciones.json")
+            anios = [*range(2015, 2025)]
+        else:
+            destinos = MUESTRA_DESTINOS
+            anios = MUESTRA_ANIOS
+
         if argumentos.mode == "sync":
             recolectar_sincrono(
-                destinos=MUESTRA_DESTINOS,
-                anios=MUESTRA_ANIOS,
+                destinos=destinos,
+                anios=anios,
                 geocoding_path=geocoding_path,
                 weather_dir=weather_dir,
                 force=argumentos.force,
@@ -343,8 +391,8 @@ if __name__ == "__main__":
         else:
             asyncio.run(
                 recolectar_async(
-                    destinos=MUESTRA_DESTINOS,
-                    anios=MUESTRA_ANIOS,
+                    destinos=destinos,
+                    anios=anios,
                     geocoding_path=geocoding_path,
                     weather_dir=weather_dir,
                     force=argumentos.force,

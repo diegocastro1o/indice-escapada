@@ -1,14 +1,32 @@
-# env vars
+# Credenciales y configuración local
 .env
-.env.local
+.env.*
+!.env.example
 
-# IDEs & OS files/dirs
-.idea/
-.DS_Store
-.DS_Store/
+# Entornos virtuales
+.venv/
+venv/
+env/
 
-# venv & python files
-.env
+# Python
 __pycache__/
 *.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
 
+# Empaquetado
+build/
+dist/
+
+# IDE y sistema operativo
+.idea/
+.vscode/
+.DS_Store
+
+# Archivos temporales y logs
+*.tmp
+*.log
