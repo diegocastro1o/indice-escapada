@@ -29,7 +29,7 @@ No cambiar estas decisiones sin verificar primero la consigna original y acordar
 - Histórico climático: 2015–2024 inclusive.
 - Año objetivo habitual: 2026, aunque los comandos aceptan otro año.
 - Una tarea climática equivale a un par `destino + año`.
-- Open-Meteo se ejecuta con un máximo de 5 solicitudes concurrentes.
+- Open-Meteo se ejecuta con un máximo de 3 solicitudes concurrentes y un inicio cada 0,5 segundos. Ante un `429`, todas las tareas comparten la pausa indicada por el servidor.
 - Nominatim se ejecuta secuencialmente, con un `User-Agent` identificable y una espera mínima de un segundo.
 - Los fines de semana largos son bloques de al menos 3 días no laborables consecutivos que incluyen algún feriado.
 - Los promedios históricos se calculan usando el mismo mes y día del fin de semana objetivo a lo largo de los diez años.
@@ -89,7 +89,7 @@ weather + routes + holidays ────────────> src/index.py
 - CLI con comandos `geocoding`, `clima`, `feriados`, `rutas`, `ranking` y `pipeline`.
 - Coordenadas de Montevideo y de los 15 destinos: 16 ubicaciones cacheadas.
 - Recolector climático síncrono.
-- Recolector climático asíncrono con sesión compartida de `aiohttp`, semáforo de 5, reintentos y progreso por tarea completada.
+- Recolector climático asíncrono con sesión compartida de `aiohttp`, semáforo de 3, limitador de 2 inicios por segundo, pausa global ante `429`, reintentos y progreso por tarea completada.
 - Validación de 365/366 días y de las cuatro variables requeridas.
 - Recuperación automática ante cachés climáticas o de feriados inválidas.
 - Histórico climático completo: 15 destinos × 10 años (2015–2024), 150 archivos y 54.795 registros diarios.
@@ -105,7 +105,7 @@ weather + routes + holidays ────────────> src/index.py
 1. Contrastar manualmente resultados extremos o inesperados del ranking.
 2. Actualizar `INDICE.md` para explicar también los pesos finales 80/15/5 y las funciones que convierten cada variable a 0–100.
 3. Completar `BITACORA.md` con tiempos síncrono/asíncrono, decisiones, problemas y evidencia de la segunda ejecución con caché.
-4. Crear pruebas automatizadas; `tests/` todavía está vacío.
+4. Ampliar las pruebas automatizadas: `tests/test_weather.py` cubre el limitador, pero faltan los demás módulos.
 
 El pipeline de datos está completo. No dar por cerrada la entrega académica hasta terminar la documentación y las pruebas pendientes.
 
@@ -130,6 +130,7 @@ Preferir `src/main.py` como interfaz pública. Los módulos individuales tambié
 
 - Nunca paralelizar Nominatim ni superar una solicitud por segundo.
 - No crear una sesión `aiohttp` por tarea; compartir una sola sesión dentro del recolector.
+- No eliminar el limitador global de Open-Meteo: el semáforo limita concurrencia, pero el limitador evita ráfagas y reintentos simultáneos que provocan `429`.
 - No eliminar cachés válidas ni usar `--force` como comportamiento predeterminado.
 - Guardar cada resultado exitoso inmediatamente para permitir reanudar.
 - Validar las respuestas antes de guardarlas o consumirlas.

@@ -1,6 +1,7 @@
 import argparse
 import asyncio
 import json
+import random
 import sys
 import time
 from datetime import date
@@ -16,8 +17,10 @@ DAILY_VARIABLES = [
     "precipitation_sum",
     "precipitation_hours",
 ]
-MAX_RETRIES = 2
+MAX_RETRIES = 4
 RETRY_DELAY_SECONDS = 5
+MAX_CONCURRENT_REQUESTS = 3
+REQUEST_INTERVAL_SECONDS = 0.5
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 MUESTRA_DESTINOS = [
@@ -26,6 +29,33 @@ MUESTRA_DESTINOS = [
     "piriapolis",
 ]
 MUESTRA_ANIOS = [2015, 2016, 2017]
+
+
+class LimitadorSolicitudes:
+    """Coordina el ritmo global y las pausas pedidas por Open-Meteo."""
+
+    def __init__(self, intervalo_segundos: float) -> None:
+        self.intervalo_segundos = intervalo_segundos
+        self.proximo_inicio = 0.0
+        self.pausa_hasta = 0.0
+        self.candado = asyncio.Lock()
+
+    async def esperar_turno(self) -> None:
+        while True:
+            async with self.candado:
+                ahora = asyncio.get_running_loop().time()
+                proximo_momento = max(self.proximo_inicio, self.pausa_hasta)
+                espera = proximo_momento - ahora
+                if espera <= 0:
+                    self.proximo_inicio = ahora + self.intervalo_segundos
+                    return
+
+            await asyncio.sleep(espera)
+
+    async def pausar(self, segundos: float) -> None:
+        async with self.candado:
+            pausa = asyncio.get_running_loop().time() + segundos
+            self.pausa_hasta = max(self.pausa_hasta, pausa)
 
 
 def cargar_ids_destinos(config_path: Path) -> list[str]:
@@ -199,8 +229,9 @@ def recolectar_sincrono(
 async def descargar_clima_async(
     sesion: aiohttp.ClientSession,
     semaforo: asyncio.Semaphore,
+    limitador: LimitadorSolicitudes,
     ubicacion: dict,
-    anio: int
+    anio: int,
 ) -> dict:
     params = {
         "latitude": ubicacion["latitud"],
@@ -215,8 +246,12 @@ async def descargar_clima_async(
 
     for intento in range(MAX_RETRIES + 1):
         try:
+            await limitador.esperar_turno()
             async with semaforo:
-                async with sesion.get(OPEN_METEO_ARCHIVE_URL, params=params) as respuesta:
+                async with sesion.get(
+                    OPEN_METEO_ARCHIVE_URL,
+                    params=params,
+                ) as respuesta:
                     respuesta.raise_for_status()
                     return await respuesta.json()
 
@@ -235,6 +270,9 @@ async def descargar_clima_async(
             else:
                 espera = RETRY_DELAY_SECONDS * (intento + 1)
 
+            espera += random.uniform(0, 1)
+            await limitador.pausar(espera)
+
             print(
                 f"[reintento] {etiqueta}: Open-Meteo respondió {ERROR.status}; "
                 f"esperando {espera:g}s."
@@ -245,7 +283,7 @@ async def descargar_clima_async(
             if intento == MAX_RETRIES:
                 raise
 
-            espera = RETRY_DELAY_SECONDS * (intento + 1)
+            espera = RETRY_DELAY_SECONDS * (intento + 1) + random.uniform(0, 1)
             print(
                 f"[reintento] {etiqueta}: error de conexión ({ERROR}); "
                 f"esperando {espera:g}s."
@@ -258,11 +296,12 @@ async def descargar_clima_async(
 async def obtener_clima_async(
     sesion: aiohttp.ClientSession,
     semaforo: asyncio.Semaphore,
+    limitador: LimitadorSolicitudes,
     destino_id: str,
     anio: int,
     geocoding_path: Path,
     weather_dir: Path,
-    force: bool = False
+    force: bool = False,
 ) -> dict:
     cache_path = ruta_cache(destino_id, anio, weather_dir)
     cache = cargar_cache(destino_id, anio, cache_path, force)
@@ -273,7 +312,13 @@ async def obtener_clima_async(
     ubicacion = cargar_ubicacion(destino_id, geocoding_path)
     print(f"[Open-Meteo] Descargando {ubicacion['nombre']} ({anio})...")
 
-    datos = await descargar_clima_async(sesion, semaforo, ubicacion, anio)
+    datos = await descargar_clima_async(
+        sesion,
+        semaforo,
+        limitador,
+        ubicacion,
+        anio,
+    )
 
     cantidad_dias = validar_datos_diarios(datos, anio)
     guardar_cache(datos, cache_path)
@@ -289,14 +334,16 @@ async def recolectar_async(
     force: bool = False,
 ) -> None:
     tareas_info = [(destino_id, anio) for destino_id in destinos for anio in anios]
-    semaforo = asyncio.Semaphore(5)
+    semaforo = asyncio.Semaphore(MAX_CONCURRENT_REQUESTS)
+    limitador = LimitadorSolicitudes(REQUEST_INTERVAL_SECONDS)
     inicio = time.perf_counter()
     total_registros = 0
     errores = []
 
     print(
         f"[inicio] Recolectando {len(tareas_info)} tareas "
-        "en modo asíncrono (máximo 5 simultáneas)."
+        f"en modo asíncrono (máximo {MAX_CONCURRENT_REQUESTS} simultáneas, "
+        f"una cada {REQUEST_INTERVAL_SECONDS:g}s)."
     )
 
     timeout = aiohttp.ClientTimeout(total=30)
@@ -306,6 +353,7 @@ async def recolectar_async(
                 resultado = await obtener_clima_async(
                     sesion,
                     semaforo,
+                    limitador,
                     destino_id,
                     anio,
                     geocoding_path,

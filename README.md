@@ -10,7 +10,7 @@ El pipeline se ejecutó de punta a punta para 2026. Actualmente hay:
 
 - 15 destinos configurados y sus coordenadas cacheadas, además de Montevideo.
 - 150 archivos climáticos: 15 destinos × 10 años (2015–2024), con 54.795 registros diarios.
-- Recolección climática síncrona y asíncrona, con un máximo de 5 solicitudes simultáneas.
+- Recolección climática síncrona y asíncrona, con un máximo de 3 solicitudes simultáneas y un inicio cada 0,5 segundos.
 - 15 rutas cacheadas desde Montevideo, incluido el acceso vehicular alternativo de Cabo Polonio.
 - Feriados de Uruguay de 2026 cacheados, 8 fines de semana largos y un ranking de 120 combinaciones.
 - Un ranking procesado en `data/processed/ranking_2026.json`.
@@ -22,7 +22,7 @@ La recomendación principal generada es **Piriápolis, del 2 al 5 de abril de 20
 | Fuente | Uso | Autenticación | Paralelización |
 |---|---|---|---|
 | [Nominatim](https://nominatim.org/) | Coordenadas de origen y destinos | No | No; se respeta 1 solicitud por segundo |
-| [Open-Meteo Historical Weather API](https://open-meteo.com/en/docs/historical-weather-api) | Clima diario histórico | No | Sí; máximo 5 solicitudes simultáneas |
+| [Open-Meteo Historical Weather API](https://open-meteo.com/en/docs/historical-weather-api) | Clima diario histórico | No | Sí; máximo 3 solicitudes simultáneas y 2 inicios por segundo |
 | [Nager.Date](https://date.nager.at/) | Feriados de Uruguay | No | No es necesaria |
 | [OpenRouteService](https://openrouteservice.org/) | Distancia y duración en auto desde Montevideo | `ORS_API_KEY` | Actualmente secuencial |
 
@@ -141,7 +141,7 @@ uv run python src/main.py clima --scope sample --mode sync --force
 uv run python src/main.py clima --scope sample --mode async --force
 ```
 
-`--force` ignora la caché y vuelve a descargar. Debe usarse solamente cuando se quiere medir tiempos de red o reemplazar datos existentes; no es necesario en el uso habitual.
+`--force` ignora la caché y vuelve a descargar. Debe usarse solamente cuando se quiere medir tiempos de red o reemplazar datos existentes; no es necesario en el uso habitual. El modo asíncrono comparte un limitador global para iniciar como máximo dos pedidos por segundo y, ante un `429`, detiene temporalmente todas las tareas según la indicación del servidor.
 
 ### 3. Descargar feriados y detectar fines de semana largos
 
@@ -247,10 +247,11 @@ Después de editar la configuración, ejecutar nuevamente `geocoding`, `clima --
 
 ## Verificación del código
 
-Actualmente no hay una suite de pruebas automatizadas completa. Como control básico se puede verificar la sintaxis y la interfaz:
+Hay pruebas automáticas del limitador de solicitudes; todavía falta ampliar la cobertura del resto de módulos. Como control básico se puede verificar sintaxis, pruebas e interfaz:
 
 ```bash
 uv run python -m py_compile src/*.py
+uv run python -m unittest discover -s tests
 uv run python src/main.py --help
 ```
 
@@ -278,7 +279,7 @@ uv run python src/main.py clima --scope full --mode async
 
 ### Respuestas `429` o errores temporales de red
 
-Los recolectores tienen reintentos y espera progresiva. Si el servicio sigue limitando solicitudes, esperar y repetir sin `--force`; las respuestas ya guardadas se reutilizarán.
+Los recolectores tienen reintentos, espera progresiva y un limitador global en modo asíncrono. Ante un `429`, todas las tareas respetan la pausa indicada por el servidor. Si el servicio sigue limitando solicitudes, repetir sin `--force`; las respuestas ya guardadas se reutilizarán.
 
 ### Un año tiene 366 registros
 
