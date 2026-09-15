@@ -222,7 +222,7 @@ indice-escapada/
 │   ├── main.py              # interfaz de línea de comandos y pipeline
 │   ├── routes.py            # rutas mediante OpenRouteService
 │   └── weather.py           # clima síncrono y asíncrono
-├── tests/                   # pruebas automatizadas (pendientes)
+├── tests/                   # pruebas automatizadas
 ├── .env.example
 ├── AGENTS.md                # contexto técnico para agentes/IA
 ├── BITACORA.md              # registro académico de decisiones

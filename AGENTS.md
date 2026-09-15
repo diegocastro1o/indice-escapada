@@ -33,6 +33,7 @@ No cambiar estas decisiones sin verificar primero la consigna original y acordar
 - Nominatim se ejecuta secuencialmente, con un `User-Agent` identificable y una espera mínima de un segundo.
 - Los fines de semana largos son bloques de al menos 3 días no laborables consecutivos que incluyen algún feriado.
 - Los promedios históricos se calculan usando el mismo mes y día del fin de semana objetivo a lo largo de los diez años.
+- El componente de acceso del índice usa la duración del viaje en minutos. La distancia se conserva en las rutas y se muestra en los resultados, pero actualmente no interviene en la fórmula.
 - Los archivos JSON se escriben de forma atómica mediante un temporal y reemplazo.
 - Cabo Polonio conserva sus coordenadas para clima, pero su acceso vial se mide hasta Barra de Valizas; ese punto está declarado como `punto_ruta` en la configuración porque el destino no es enrutable en auto por OpenRouteService.
 

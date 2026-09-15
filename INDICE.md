@@ -90,18 +90,18 @@ Las horas de precipitación sirven para diferenciar entre una lluvia corta y un 
 
 El clima no es lo único que importa para una escapada. También tenemos en cuenta qué tan fácil y rápido es llegar desde Montevideo.
 
-La información de rutas se obtiene con OpenRouteService.
+La información de rutas se obtiene con OpenRouteService. La API devuelve tanto distancia como duración, pero en la versión actual del programa el componente de accesibilidad se calcula usando la duración del viaje.
 
 | Parte del índice | Peso |
 | --- | ---: |
 | Clima | 80 % |
-| Accesibilidad por carretera | 15 % |
+| Tiempo de viaje por carretera | 15 % |
 | Duración del viaje | 5 % |
 | **Total** | **100 %** |
 
-La accesibilidad se basa en la distancia por carretera. La duración se basa en el tiempo estimado del viaje.
+El componente de tiempo de viaje recibe 100 puntos si la duración es de hasta 60 minutos, 0 puntos si es de 480 minutos o más, y una puntuación lineal entre ambos extremos. La distancia se conserva como información descriptiva de cada ruta, pero no participa actualmente en el puntaje.
 
-En los dos casos, cuanto menor sea la distancia o el tiempo necesario para llegar, mejor será el puntaje.
+La duración del fin de semana es un componente distinto: se puntúa según la cantidad de días disponibles.
 
 ---
 
@@ -189,7 +189,7 @@ Después se calcula el puntaje final:
 ```text
 puntaje final =
     (puntaje del clima × 0.80) +
-    (puntaje de accesibilidad × 0.15) +
+    (puntaje de tiempo de viaje × 0.15) +
     (puntaje de duración × 0.05)
 ```
 
