@@ -104,7 +104,7 @@ Escalar a 15 destinos × 10 años y permitir que una ejecución interrumpida con
 Total: 54.795 registros diarios
 ```
 
-Cada tarea se guarda en `data/raw/weather/<destino>/<año>.json`. El comando principal es:
+Guardamos cada tarea en `data/raw/weather/<destino>/<año>.json`. El comando principal es:
 
 ```bash
 uv run python src/main.py pipeline --year 2026 --top 10
@@ -199,8 +199,7 @@ uv run python -m py_compile src/*.py
 ```
 
 ## Aprendizajes
-
-1. La caché permite reanudar y evita repetir llamadas costosas.
+1. El caché nos permitió reanudar y evitar repetir llamadas costosas.
 2. Paralelizar requiere controlar tanto la concurrencia como la frecuencia.
 3. Las restricciones de una API forman parte del diseño técnico.
 4. Una API autenticada puede aportar una dimensión adicional al análisis.
