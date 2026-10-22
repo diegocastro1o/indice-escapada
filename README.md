@@ -26,6 +26,8 @@ La recomendación principal generada es **Piriápolis, del 2 al 5 de abril de 20
 | [Nager.Date](https://date.nager.at/) | Feriados de Uruguay | No | No es necesaria |
 | [OpenRouteService](https://openrouteservice.org/) | Distancia y duración en auto desde Montevideo | `ORS_API_KEY` | Actualmente secuencial |
 
+La asincronía se aplica al clima porque es la etapa con muchas tareas independientes y el mayor costo de tiempo. Geocoding se mantiene secuencial por el límite público de Nominatim (una solicitud por segundo). Feriados y rutas también se ejecutan secuencialmente de forma deliberada: son pocas consultas, tienen caché y no son el cuello de botella medido del proyecto. La consigna pide paralelizar el recolector que tarda y justificar qué partes conviene no paralelizar; no exige que todas las APIs sean asíncronas.
+
 ## Variables y criterio del índice
 
 Para cada destino y fin de semana largo se toman las mismas fechas de calendario en los años 2015–2024 y se calculan promedios históricos de:
